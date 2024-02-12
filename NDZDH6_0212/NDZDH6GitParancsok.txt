@@ -1,1 +1,12 @@
-próba
+Legfontosabb Git parancsok:
+
+git config --global user.name “[name]”		# Beállítja a felhasználó nevét a git konfigurációjában
+git config --global user.email “[email]”	# Beállítja a felhasználó e-mail címét a git konfigurációjában
+git init					# Inicializál egy új git repository-t az aktuális mappában
+git add [file/foldername]			# Hozzáadja a megadott fájlt vagy mappát a staging area-hoz, készítve a következő commit-ra
+git rm [file/foldername]			# Törli a megadott fájlt vagy mappát a következő commit-ból és a munkakönyvtárból
+git status					# Megmutatja a munkakönyvtár változásait és a staging area állapotát
+git pull					# Frissíti a helyi repository-t a távoli repository legújabb változataival
+git commit -m "[commit message]"		# Commit-olja a staging area tartalmát a lokális repository-ba, egy rövid üzenettel ellátva
+git push					# Küldi a lokális repository változásait a távoli repository-ba
+git log						# Megjeleníti a commitok naplóját, beleértve az azonosítójukat, szerzőjüket és üzenetüket
