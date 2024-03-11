@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+<head>
+    <title>Órarend</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Táblázat készítése">
+    <meta name="keywords" content="HTML, weblap, urlap">
+</head>
+
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+
+    p {
+        color: rgb(63, 62, 62);
+    }
+</style>
+
+<body style="background-color: rgb(23, 131, 143);">
+    <header style="font-family: Arial, Helvetica, sans-serif; color: aliceblue;">
+        <h2>HTML5 űrlap - NDZDH6</h2>
+    </header>
+
+    <section style="background-color: rgba(4, 222, 222, 0.708); width:max-content;">
+        <form id="01" name="urlap1" action="" method="post" target="_self">
+            <p>Név:
+            <input type="text" id="name" name="name"></p>
+            <p>PIN kód:
+            <input type="password" id="pin" name="pin"></p>
+            <p>Kedvenc gyümölcs:
+            <input type="text" id="fruit" name="fruit" list=""></p>
+            <datalist id="fruits">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+              </datalist>
+            <p>Életkor:
+            <input type="number" min="1" max="100" id="age" name="age"></p>
+            <p>Lábméret:
+                <input type="number" min="25" max="50" step="0.5" id="footsize" name="footsize"></p>
+            <p>Önbizalom:
+                <input type="range" min="0" max="100" id="confidence" name="confidence"></p>
+        </form>
+
+    </section>
+</body>
+
+</html>
