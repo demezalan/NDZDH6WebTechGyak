@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+<head>
+    <title>Űrlap</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Videó lejátszása">
+    <meta name="keywords" content="HTML, weblap, mp4">
+</head>
+
+<style>
+    p {
+        color: rgb(63, 62, 62);
+    }
+
+    header {
+        font-family: Arial, Helvetica, sans-serif;
+        color: aliceblue;
+    }
+
+    section {
+        background-color: rgba(4, 222, 222, 0.708);
+        width: 580px;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px 5px #000000aa;
+    }
+
+    footer {
+        float: right;
+        text-align: right;
+    }
+</style>
+
+<body style="background-color: rgba(23, 131, 143, 0.307);">
+    <div style="width: 580px; margin: auto;">
+
+        <header>
+            <h2 style="color: rgb(0, 0, 0);">Videó lejátszása - NDZDH6</h2>
+        </header>
+
+        <section id="tartalom">
+            <center><video style="margin: auto;" id="DZ" width="380" height="250" controls>
+                <source src="NDZDH6_video.mp4" type="video/mp4">
+            </video></center>
+            <br><br>
+
+            <button onclick="play()">Indítás</button>
+            <button onclick="pause()">Leállítás</button>
+            <button onclick="playPause()">Indítás / Leállítás</button><br><br>
+            <button onclick="mute()">Néma</button>
+            <button onclick="makeQuiet()">Halk</button>
+            <button onclick="makeLoud()">Hangos</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="makeBig()">Nagyon lassú</button>
+            <button onclick="makeBig()">Lassú</button>
+            <button onclick="makeBig()">Normál</button>
+            <button onclick="makeBig()">Gyors</button>
+            <button onclick="makeBig()">Nagyon gyors</button><br><br>
+            <button onclick="makeSmall()">Kicsi</button>
+            <button onclick="makeNormal()">Normál</button>
+            <button onclick="makeBig()">Nagy</button>
+        </section>
+
+        <footer>
+            <br>
+            <hr color="grey">
+            <p>Forrás: <a href="https://www.w3schools.com/html/html5_video.asp"
+                    target="_blank">https://www.w3schools.com/html/html5_video.asp</a></p>
+            </p>
+        </footer>
+    </div>
+
+    <script> 
+        var DZVideo = document.getElementById("DZ"); 
+        
+        function play() {
+            DZVideo.play();
+        } 
+
+        function pause() {
+            DZVideo.pause();
+        } 
+        
+        function playPause() { 
+          if (DZVideo.paused) 
+            DZVideo.play(); 
+          else 
+            DZVideo.pause(); 
+        }
+
+        function mute() {
+            DZVideo.mute();
+        }
+
+        function makeLoud() {
+            //DZVideo.
+        }
+        
+        function makeBig() { 
+            DZVideo.width = 460; 
+        } 
+        
+        function makeSmall() { 
+            DZVideo.width = 280; 
+        } 
+        
+        function makeNormal() { 
+            DZVideo.width = 380; 
+        } 
+        </script> 
+
+</body>
+
+</html>
