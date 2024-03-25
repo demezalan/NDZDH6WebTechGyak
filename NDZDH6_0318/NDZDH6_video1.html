@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+<head>
+    <title>Saját videó lejátszása - NDZDH6</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Videó lejátszása">
+    <meta name="keywords" content="HTML, weblap, mp4">
+</head>
+
+<style>
+    p {
+        color: rgb(63, 62, 62);
+    }
+
+    header {
+        font-family: Arial, Helvetica, sans-serif;
+        color: aliceblue;
+    }
+
+    section {
+        background-color: rgba(145, 176, 83, 0.708);
+        width: 580px;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px 5px #000000aa;
+    }
+
+    footer {
+        float: right;
+        text-align: right;
+        width: 500px;
+    }
+</style>
+
+<body style="background-color: rgba(147, 178, 67, 0.307);">
+    <div style="width: 580px; margin: auto;">
+
+        <header>
+            <h2 style="color: rgb(0, 0, 0);">Saját videó lejátszása - NDZDH6</h2>
+        </header>
+
+        <section id="tartalom">
+            <center><video style="margin: auto;" id="DZ" width="340" controls>
+                    <source src="NDZDH6_video1.mp4" type="video/mp4">
+                </video></center>
+            <br><br>
+
+            <div style="margin:0 auto;"><button onclick="play()">Indítás</button>
+                <button onclick="pause()">Leállítás</button>
+                <button onclick="playPause()">Indítás / Leállítás</button><br><br>
+            </div>
+            <div style="margin: auto;"><button onclick="mute()">Néma</button>
+                <button onclick="makeQuiet()">Halk</button>
+                <button onclick="makeLoud()">Hangos</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button onclick="verySlow()">Nagyon lassú</button>
+                <button onclick="slow()">Lassú</button>
+                <button onclick="normalSpeed()">Normál</button>
+                <button onclick="fast()">Gyors</button>
+                <button onclick="veryFast()">Nagyon gyors</button><br><br>
+            </div>
+            <div style="margin: auto;"><button onclick="makeSmall()">Kicsi</button>
+                <button onclick="makeNormal()">Normál</button>
+                <button onclick="makeBig()">Nagy</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button onclick="hasFinished()">Befejeződött-e</button>
+                <button onclick="videoLength()">Videó hossza (mp)</button>
+                <button onclick="current()">Jelenlegi pozíció</button>
+            </div>
+        </section>
+
+        <footer>
+            <br>
+            <hr color="grey">
+            <p>Forrás: <a href="https://youtu.be/et28frk-kAY"
+                    target="_blank">https://youtu.be/et28frk-kAYp</a></p>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        var DZVideo = document.getElementById("DZ");
+
+        function play() {
+            DZVideo.play();
+        }
+
+        function pause() {
+            DZVideo.pause();
+        }
+
+        function playPause() {
+            if (DZVideo.paused)
+                DZVideo.play();
+            else
+                DZVideo.pause();
+        }
+
+
+
+        function mute() {
+            DZVideo.volume = 0;
+        }
+
+        function makeQuiet() {
+            DZVideo.volume = 0.5;
+        }
+
+        function makeLoud() {
+            DZVideo.volume = 1;
+        }
+
+
+
+        function verySlow() {
+            DZVideo.playbackRate = 0.5;
+        }
+
+        function slow() {
+            DZVideo.playbackRate = 0.75;
+        }
+
+        function normalSpeed() {
+            DZVideo.playbackRate = 1;
+        }
+
+        function fast() {
+            DZVideo.playbackRate = 1.25;
+        }
+
+        function veryFast() {
+            DZVideo.playbackRate = 1.5;
+        }
+
+
+
+        function makeBig() {
+            DZVideo.width = 460;
+        }
+
+        function makeSmall() {
+            DZVideo.width = 280;
+        }
+
+        function makeNormal() {
+            DZVideo.width = 380;
+        }
+
+
+
+        function hasFinished() {
+            alert(DZVideo.ended);
+        }
+
+        function videoLength() {
+            alert(DZVideo.duration);
+        }
+
+        function current() {
+            alert(DZVideo.currentTime);
+        }
+
+    </script>
+
+</body>
+
+</html>

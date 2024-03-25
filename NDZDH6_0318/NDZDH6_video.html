@@ -3,7 +3,7 @@
 <html lang="hu">
 
 <head>
-    <title>Űrlap</title>
+    <title>Videó lejátszása - NDZDH6</title>
     <meta charset="UTF-8">
     <meta name="description" content="Videó lejátszása">
     <meta name="keywords" content="HTML, weblap, mp4">
@@ -19,31 +19,23 @@
         color: aliceblue;
     }
 
-    section {
-        background-color: rgba(4, 222, 222, 0.708);
-        width: 580px;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 5px 5px 5px 5px #000000aa;
-    }
-
     footer {
         float: right;
         text-align: right;
     }
 </style>
 
-<body style="background-color: rgba(23, 131, 143, 0.307);">
-    <div style="width: 580px; margin: auto;">
+<body style="background-color: rgba(255, 255, 255, 0.307);">
+    <div style="width: 580px;">
 
         <header>
             <h2 style="color: rgb(0, 0, 0);">Videó lejátszása - NDZDH6</h2>
         </header>
 
         <section id="tartalom">
-            <center><video style="margin: auto;" id="DZ" width="380" height="250" controls>
+            <video style="margin: auto;" id="DZ" width="380" height="250" controls>
                 <source src="NDZDH6_video.mp4" type="video/mp4">
-            </video></center>
+            </video>
             <br><br>
 
             <button onclick="play()">Indítás</button>
@@ -52,14 +44,17 @@
             <button onclick="mute()">Néma</button>
             <button onclick="makeQuiet()">Halk</button>
             <button onclick="makeLoud()">Hangos</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button onclick="makeBig()">Nagyon lassú</button>
-            <button onclick="makeBig()">Lassú</button>
-            <button onclick="makeBig()">Normál</button>
-            <button onclick="makeBig()">Gyors</button>
-            <button onclick="makeBig()">Nagyon gyors</button><br><br>
+            <button onclick="verySlow()">Nagyon lassú</button>
+            <button onclick="slow()">Lassú</button>
+            <button onclick="normalSpeed()">Normál</button>
+            <button onclick="fast()">Gyors</button>
+            <button onclick="veryFast()">Nagyon gyors</button><br><br>
             <button onclick="makeSmall()">Kicsi</button>
             <button onclick="makeNormal()">Normál</button>
-            <button onclick="makeBig()">Nagy</button>
+            <button onclick="makeBig()">Nagy</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="hasFinished()">Befejeződött-e</button>
+            <button onclick="videoLength()">Videó hossza (mp)</button>
+            <button onclick="current()">Jelenlegi pozíció</button>
         </section>
 
         <footer>
@@ -89,14 +84,44 @@
             DZVideo.pause(); 
         }
 
+
+
         function mute() {
-            DZVideo.mute();
+            DZVideo.volume = 0;
+        }
+
+        function makeQuiet() {
+            DZVideo.volume = 0.5;
         }
 
         function makeLoud() {
-            //DZVideo.
+            DZVideo.volume = 1;
         }
         
+
+
+        function verySlow() { 
+            DZVideo.playbackRate = 0.5; 
+        }
+        
+        function slow() { 
+            DZVideo.playbackRate = 0.75; 
+        } 
+
+        function normalSpeed() { 
+            DZVideo.playbackRate = 1; 
+        } 
+
+        function fast() { 
+            DZVideo.playbackRate = 1.25; 
+        } 
+
+        function veryFast() { 
+            DZVideo.playbackRate = 1.5; 
+        } 
+
+
+
         function makeBig() { 
             DZVideo.width = 460; 
         } 
@@ -108,6 +133,21 @@
         function makeNormal() { 
             DZVideo.width = 380; 
         } 
+
+
+
+        function hasFinished() { 
+            alert(DZVideo.ended); 
+        } 
+        
+        function videoLength() { 
+            alert(DZVideo.duration); 
+        } 
+        
+        function current() { 
+            alert(DZVideo.currentTime);
+        } 
+
         </script> 
 
 </body>
