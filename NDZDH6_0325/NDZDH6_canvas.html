@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+<head>
+    <title>Rajzolás a vászonra</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Táblázat készítése">
+    <meta name="keywords" content="HTML, weblap, urlap">
+</head>
+
+<style>
+    p {
+        color: rgb(63, 62, 62);
+    }
+
+    header {
+        font-family: Arial, Helvetica, sans-serif;
+        color: aliceblue;
+    }
+
+
+    footer {
+        float: right;
+        text-align: right;
+    }
+</style>
+
+<body style="background-color: rgba(255, 255, 255, 0.307);">
+    
+
+        <header>
+            <h2 style="color: rgb(0, 0, 0);">Rajzolás a vászonra - NDZDH6</h2>
+        </header>
+
+        <section id="tartalom">
+            <canvas id="DZCanvas" width="800px" height="350px"  style="border: 1px solid;" >
+                <h2>Mérnökinformatika 2024</h2>
+                
+
+            </canvas>
+        </section>
+
+        <footer>
+            <br>
+            <hr color="grey">
+            <p>Forrás: <a href="http://html5doctor.com/" target="_blank">http://html5doctor.com/</a></p>
+            <p>Formátumok: <a href="https://www.html5pattern.com/" target="_blank">https://www.html5pattern.com/</a></p>
+            <p>JavaScript RegExp: <a href="https://www.w3schools.com/jsref/jsref_obj_regexp.asp"
+                    target="_blank">https://www.w3schools.com/jsref/jsref_obj_regexp.asp</a></p>
+        </footer>
+
+        <script>
+            var dz = document.getElementById("DZCanvas");
+            var dzx = dz.getContext("2d");
+            
+
+            //Rect
+            dzx.lineWidth = 5;
+            dzx.strokeStyle = "#0066ff";
+            dzx.strokeRect(80,180,200,120);
+
+            var gradient = dzx.createRadialGradient(175,87,10,200,100,75);
+            
+            gradient.addColorStop("0", "#ffcc00");
+            gradient.addColorStop("0.3", "#6600ff");
+            gradient.addColorStop("1.0", "#33ff33");
+
+            //színátmenet téglalap
+            dzx.fillStyle = gradient;
+            dzx.fillRect(100,60,150,75);
+
+            dzx.font = "30px Arial";
+            dzx.strokeText("Hello World", 10, 50);
+        </script>
+    
+</body>
+</html>
