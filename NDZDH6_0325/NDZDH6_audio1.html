@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+<head>
+    <title>Audió - zene, hang - lejátszása_NDZDH6</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Audió lejátszása">
+    <meta name="keywords" content="HTML, weblap, mp3">
+</head>
+
+<style>
+    p {
+        color: rgb(63, 62, 62);
+    }
+
+    header {
+        font-family: Arial, Helvetica, sans-serif;
+        color: aliceblue;
+    }
+
+    section {
+        background-color: rgba(145, 176, 83, 0.708);
+        width: 580px;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px 5px #000000aa;
+    }
+
+    footer {
+        float: right;
+        text-align: right;
+        width: 500px;
+    }
+</style>
+
+<body style="background-color: rgba(255, 255, 255, 0.307);">
+    <div style="width: 580px; margin: auto;">
+        <header>
+            <h2 style="color: rgb(0, 0, 0);">Audió - zene, hang - lejátszása_NDZDH6</h2>
+        </header>
+
+        <section id="tartalom">
+            <center><audio style="margin: auto;" id="DZ" width="680" controls>
+                    <source src="audio1.mp3" type="audio/mp3">
+                </audio></center>
+            <audio id="yes" src="yes.mp3"></audio>
+            <audio id="no" src="no.mp3"></audio>
+            <br><br>
+
+            <button onclick="playPause()">Lejátszás / Szünet</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="positive()">Pozitív</button>
+            <button onclick="negative()">Negatív</button><br><br>
+            <button onclick="mute()">Néma</button>
+            <button onclick="makeQuiet()">Halk</button>
+            <button onclick="makeLoud()">Hangos</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="verySlow()">Nagyon lassú</button>
+            <button onclick="slow()">Lassú</button>
+            <button onclick="normalSpeed()">Normál</button>
+            <button onclick="fast()">Gyors</button>
+            <button onclick="veryFast()">Nagyon gyors</button><br><br>
+            <button onclick="hasFinished()">Befejeződött-e</button>
+            <button onclick="audioLength()">Audió hossza (mp)</button>
+            <button onclick="current()">Jelenlegi pozíció</button>
+            <button onclick="jumpToStart()">Ugrás az elejére</button>
+
+        </section>
+
+        <footer>
+            <br>
+            <hr color="grey" width="600px">
+            <p>Forrás: <a href="https://youtu.be/b3rNUhDqciM"
+                    target="_blank">https://youtu.be/b3rNUhDqciM</a></p>
+            </p>
+        </footer>
+    </div>
+    <script>
+        const DZAudio = document.getElementById('DZ');
+        const yes = document.getElementById('yes');
+        const no = document.getElementById('no');
+
+        function playPause() {
+            if (DZAudio.paused)
+                DZAudio.play();
+            else
+                DZAudio.pause();
+        }
+
+        function positive() {
+            yes.play();
+        }
+
+        function negative() {
+            no.play();
+        }
+
+
+
+        function mute() {
+            DZAudio.volume = 0;
+        }
+
+        function makeQuiet() {
+            DZAudio.volume = 0.5;
+        }
+
+        function makeLoud() {
+            DZAudio.volume = 1;
+        }
+
+
+
+        function verySlow() {
+            DZAudio.playbackRate = 0.5;
+        }
+
+        function slow() {
+            DZAudio.playbackRate = 0.75;
+        }
+
+        function normalSpeed() {
+            DZAudio.playbackRate = 1;
+        }
+
+        function fast() {
+            DZAudio.playbackRate = 1.25;
+        }
+
+        function veryFast() {
+            DZAudio.playbackRate = 1.5;
+        }
+
+
+
+
+        function hasFinished() {
+            alert(DZAudio.ended);
+        }
+
+        function audioLength() {
+            alert(DZAudio.duration)
+        }
+
+        function current() {
+            alert(DZAudio.currentTime);
+        }
+
+        function jumpToStart() {
+            DZAudio.currentTime = 0;
+        }
+
+
+        DZAudio.addEventListener('ended', () => {
+            alert('VÉGE');
+        });
+    </script>
+
+</body>
+
+</html>
