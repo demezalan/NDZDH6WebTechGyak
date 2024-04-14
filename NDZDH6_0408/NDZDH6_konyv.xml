@@ -1,0 +1,16 @@
+<konyvek>
+    <konyv>
+        <szerzo>Nyékyné Dr. Gaizler Judit</szerzo>
+        <cim>Java 2 I-II.</cim>
+        <leiras>Útikalauz programozóknak</leiras>
+        <kiadas>5.0</kiadas>
+        <ev>2009</ev>
+    </konyv>
+    <konyv>
+        <szerzo>Reiter István</szerzo>
+        <cim>C# programozás lépésről lépésre</cim>
+        <leiras></leiras>
+        <kiadas></kiadas>
+        <ev>2018</ev>
+    </konyv>
+</konyvek>

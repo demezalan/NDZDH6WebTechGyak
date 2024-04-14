@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+<head>
+    <title>JS objektum konvertálása JSON Text-té</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, weblap, json">
+</head>
+
+<body>
+    <header>
+        <h2>JS objektum konvertálása JSON Text-té</h2>
+    </header>
+    <section>
+        <div class="jsonText" style="font-family: monospace;">
+    </section>
+</body>
+
+<script>
+
+const jsonObjDZ = {
+        név: "Deme Zalán",
+        irányítószám: "1234",
+        város: "Miskolc",
+        egyetem: "Miskolci Egyetem"
+    }
+
+    const jsonText = JSON.stringify(jsonObjDZ, null, 4);
+
+    const jsonTextDiv = document.querySelector('.jsonText');
+    jsonTextDiv.innerHTML = jsonText;
+
+    document.getElementById("js").innerHTML = jsonTextDZ;
+
+</script>
+
+
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+<head>
+    <title>Tömbökön belüli tömbök ciklusa</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, weblap, json">
+</head>
+
+<body>
+    <header>
+        <h2>Tömbökön belüli tömbök ciklusa</h2>
+    </header>
+    <div id="jsonRenderer"></div>
+
+
+<script>
+
+    const DZObj = {
+        "name": "DZ",
+        "age": 20,
+        "cars": [
+            { "name": "Toyota", "models": ["CHR", "Corolla", "Proace"] },
+            { "name": "Ford", "models": ["Kuga", "Mondeo", "Mustang"] },
+            { "name": "BMW", "models": ["320", "X3", "X5"] },
+            { "name": "Fiat", "models": ["500", "Panda", "Tipo"] }
+        ]
+    }
+
+    const jsonRenderer = document.getElementById('jsonRenderer');
+
+    const h2 = document.createElement('h2');
+    h2.innerHTML = `<span><b>${DZObj["name"]}</b></span> (${DZObj["age"]})`;
+    jsonRenderer.appendChild(h2);
+
+    for (let i = 0; i < DZObj["cars"].length; i++) {
+        const h3 = document.createElement('h3');
+        h3.innerHTML = `<span><b>${DZObj["cars"][i]["name"]}</b></span>:`;
+        jsonRenderer.appendChild(h3);
+
+        const ul = document.createElement('ul');
+        jsonRenderer.appendChild(ul);
+
+        for (let j = 0; j < DZObj["cars"][i]["models"].length; j++) {
+            const li = document.createElement('li');
+            li.innerHTML = DZObj["cars"][i]["models"][j];
+            ul.appendChild(li);
+        }
+    }
+</script>
+</body>
+
+
+</html>

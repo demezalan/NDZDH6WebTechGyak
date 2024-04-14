@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+<head>
+    <title>JSON megvalósítása – JavaScript</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, weblap, json">
+</head>
+
+<body>
+    <header>
+        <h2>JSON megvalósítása – JavaScript</h2>
+    </header>
+    <section>
+        <div id="jsonString" style="font-family: monospace;">
+
+        </div>
+    
+        <div id="jsonRenderer">
+    
+        </div>
+    </section>
+</body>
+
+<script>
+
+const jsonRenderer = document.getElementById('jsonRenderer');
+
+    let jsonTextDZ = ""; 
+
+    fetch('./NDZDH6_konyv.json')
+        .then(response => response.text())
+        .then(data => {
+            jsonTextDZ = data;
+            render();
+        });
+
+    function render() {
+        const jsonObj = JSON.parse(jsonTextDZ);
+        Array.from(jsonObj["konyvek"]["konyv"]).forEach(konyv => {
+            const p = document.createElement('p');
+            p.innerHTML = `<span><b>${konyv["szerzo"]}</b></span>: ${konyv["cim"]}, ${konyv["leiras"]}, ${konyv["kiadas"]}, ${konyv["ev"]};`;
+            jsonRenderer.appendChild(p);
+        });
+
+        const jsonStringDiv = document.getElementById('jsonString');
+        jsonStringDiv.innerHTML = jsonTextDZ;
+    }
+</script>
+
+
+
+</html>
