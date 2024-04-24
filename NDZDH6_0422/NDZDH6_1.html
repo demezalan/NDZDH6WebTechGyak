@@ -7,19 +7,9 @@
     <meta charset="UTF-8">
     <script src="jquery-3.7.1.min.js" defer></script>
     <script src="NDZDH6_1.js" defer></script>
-    <script>
-        $(document).ready(function(){
-            $("#animation").click(function(){
-                $("div#rect").animate((left:'300px', width:'300px'),1000);
-                $("div#rect").animate((left:'300px', width:'300px'),1000);
-                $("div#rect").animate((left:'300px', width:'300px'),1000);
-                $("div#rect").animate((left:'300px', width:'300px'),1000);
-            })
-            })
-        
-    </script>
     <style>
         #rect {
+            padding: 20px;
           width: 300px;
           height: 50px;
           left: 300px;
@@ -35,16 +25,16 @@
     <div id="buttons">
         <button id="animation">Animáció indítása</button>&nbsp;&nbsp;&nbsp;
         <button id="hide">Bekezdések elrejtése</button>&nbsp;&nbsp;&nbsp;
-        <button id="collapseOpen">Összecsuk / Kinyit</button><br>
+        <button id="toggle">Összecsuk / Kinyit</button><br>
     </div>
     <div id="paragraphs">
-        <p class="hide">
+        <p>
             <b>A jQuery egy JavaScript programozói könyvtár, amelyet John Resig kezdett fejleszteni.</b>
         </p>
-        <p class="hide">
+        <p>
             Elterjedtnek tekinthető, segítségével könnyen bejárható egy HTML oldal DOM-ja.
         </p>
-        <p class="hide">
+        <p>
             <b>Effekteket és animációt adhatunk HTML elemeinkhez. Számtalan plugint írtak hozzá</b>
         </p>
     </div>
