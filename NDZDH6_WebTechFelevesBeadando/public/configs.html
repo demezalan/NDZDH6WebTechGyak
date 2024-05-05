@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Fényképezés titkai">
+    <meta name="keywords" content="HTML, weblap, fényképező">
+    <link rel="icon" type="image/x-icon" href="/lib/lens.png">
+    <title>A fényképezők titkai: típusok</title>
+    <style type="text/css">
+        #wrapper {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1502px;
+        }
+    </style>
+    <link rel="stylesheet" href="lib/CSSs/configs.css">
+
+    <script src="lib/jquery-3.7.1.min.js" defer></script>
+    <script src="lib/configs/configs.js" defer></script>
+</head>
+
+<div id="wrapper">
+
+    <body>
+        <br>
+        <header>
+            <h1 id="title"><b>A fénykép(ező) titkai</b></h1>
+            <br>
+            <h2>Népszerű típusok</h2>
+        </header>
+
+        <div>
+            <nav>
+                <div style="position: fixed; visibility: visible; z-index: 1;">
+                    <a class="nav" href="index.html" style="color: rgb(84, 137, 159);">FŐOLDAL</a>
+                    <br>
+                    <br>
+                    <a class="nav" href="history.html" style="color: rgba(182, 117, 93, 0.925);">A
+                        FÉNYKÉPEZÉS<br>TÖRTÉNETE</a>
+                    <br>
+                    <br>
+                    <a class="nav" href="rules.html"
+                        style="color: rgba(203, 86, 86, 0.789);">FÉNYKÉPEZÉS<br>ALAPSZABÁLYAI</a>
+                    <br>
+                    <br>
+                    <a class="nav" href="types.html"
+                        style="color: rgba(154, 96, 204, 0.823);">FÉNYKÉPEZŐGÉPEK<br>FAJTÁI</a>
+                    <br>
+                    <br>
+                    <a class="nav" href="configs.html" style="color: rgb(158, 158, 158);">NÉPSZERŰ TÍPUSOK</a>
+                    <br>
+                    <br>
+                    <a class="nav" href="settings.html" style="color: rgb(110, 193, 114);">KÜLÖNBÖZŐ<br>BEÁLLÍTÁSOK</a>
+                    <br>
+                    <br>
+                    <a class="nav" href="form.html" style="color: rgba(212, 212, 44, 0.795);">NYEREMÉNYJÁTÉK</a>
+                </div>
+            </nav>
+            <aside>
+                <div style="position: relative; top: 700px;">
+                    <a href="#title"><img src="lib/up.png" style="width:80%"></a><br>
+                    <p class="footer">Fel az oldal<br>tetejére</p>
+                </div>
+            </aside>
+
+            <article id="upperLeft">
+                <p class="article">A <i>techradar</i> által összeállított lista szerint a legjobb fényképezőgépek
+                    kezdő fotósoknak:</p>
+                <br>
+                <ol style="padding-left: 4rem;">
+                    <li id="cam1">Canon EOS R10</li>
+                    <li id="cam2">Olympus OM-D E-M10</li>
+                    <li id="cam3">Fujifilm X-T30</li>
+                    <li id="cam4">Sony ZV-E10</li>
+                    <li id="cam5">Fujifilm X-S20</li>
+                    <li id="cam6">Nikon Z fc</li>
+                    <li id="cam7">Nikon D3500</li>
+                    <li id="cam8">Panasonic Lumix ZS200</li>
+                </ol>
+                <br><br><br><br><br><br><br><br><br><br>
+                <p class="article">Az esetleges fordítási hibákért minden felelőséget magára vállal a <b>Google Fordító</b>.</p>
+                <img src="lib/configs/translator.png" style="width: 30%;">
+            </article>
+
+            <article id="upperRight">
+                <table id="cameras">
+                    <thead>
+                        <tr style="height: 30px;">
+                            <th>Márka</th>
+                            <th>Típus</th>
+                            <th>Szenzor</th>
+                            <th>Felbontás</th>
+                            <th>Kijelző</th>
+                            <th>Autofókusz</th>
+                            <th>Fotózási sebesség</th>
+                            <th>Videó</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cameraData">
+
+                    </tbody>
+                </table>
+                <br><br>
+                <img class="hide" id="cam1" src="lib/configs/r10Front.png" style="float: left;">
+                <img class="hide" id="cam1" src="lib/configs/r10Back.png" style="float: right;">
+                <img class="hide" id="cam2" src="lib/configs/olympusFront.png" style="float: left;">
+                <img class="hide" id="cam2" src="lib/configs/olympusBack.png" style="float: right;">
+                <img class="hide" id="cam3" src="lib/configs/xt30Front.png" style="float: left;">
+                <img class="hide" id="cam3" src="lib/configs/xt30Back.png" style="float: right;">
+                <img class="hide" id="cam4" src="lib/configs/sonyFront.png" style="float: left;">
+                <img class="hide" id="cam4" src="lib/configs/sonyBack.png" style="float: right;">
+                <img class="hide" id="cam5" src="lib/configs/xs20Front.png" style="float: left;">
+                <img class="hide" id="cam5" src="lib/configs/xs20Back.png" style="float: right;">
+                <img class="hide" id="cam6" src="lib/configs/zfcFront.png" style="float: left;">
+                <img class="hide" id="cam6" src="lib/configs/zfcBack.png" style="float: right;">
+                <img class="hide" id="cam7" src="lib/configs/d3500Front.png" style="float: left;">
+                <img class="hide" id="cam7" src="lib/configs/d3500Back.png" style="float: right;">
+                <img class="hide" id="cam8" src="lib/configs/panasonicFront.png" style="float: left;">
+                <img class="hide" id="cam8" src="lib/configs/panasonicBack.png" style="float: right;">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="hide" id="cam1">
+                    <p class="article" style="text-align: justify;">
+                        Az új Canon EOS R10 beállít egy friss mércét az alapfokú fényképezőgépek teljesítményében,
+                        kényelmesen túlszárnyalva a kortárs okostelefonokat. Egy gyors Digic X processzorral
+                        felszerelve, ez a tükör nélküli modell profitál a legújabb automatikus élességállítási
+                        képességekből.<br><br>
+
+                        Tesztelés során azt találtuk, hogy az AF követés lenyűgözően intelligens és intuitív kezdők
+                        számára. A 15 kép/mp állított sorozatfelvételi sebességek is pontosnak bizonyultak az R10-el
+                        töltött időnk során. Ezek az képességek együtt azt jelentik, hogy elég gyors ahhoz, hogy
+                        megörökítse a pillanatnyi cselekvéseket, amit nem mondhatunk el minden kezdő fényképezőgépről.
+                        Ráadásul, a könnyű váz még a kezdők számára is kényelmesen ismerős, az articuláló érintőképernyő
+                        pedig hasznos hozzáférést kínál.<br><br>
+
+                        A kompakt formátumnak köszönhetően könnyen kezelhető, amikor új technikákat próbál ki, míg a két
+                        vezérlő tárcsa lehetővé teszi a beállítások egyszerű finomhangolását. A testen belüli
+                        képstabilizátor hiánya korlátozza az R10 képességeit a sötétben, de az képminőség elegendő, sok
+                        részlettel a sötétből kihozható. Tehát nem forradalmi modell, de a specifikációi és
+                        vezérlőrendszere az R10-et a kezdők számára az első helyre teszik a mi listánkon. Reméljük, hogy
+                        a Canon több natív APS-C objektívet ad hozzá, hogy még vonzóbbá tegye az ajánlatot.
+                    </p>
+                </div>
+                <div class="hide" id="cam2">
+                    <p class="article" style="text-align: justify;">
+                        Ha egy egyszerű, kompakt tükör nélküli fényképezőgépet keresel, ami állandóan vonzó képeket
+                        készít, akkor az OM-D E-M10 Mark IV mindenképpen érdemes helyet kapnia a rövid listádon. Főként
+                        okostelefonról váltók számára tervezték, ergonomikus fogásának, könnyen kezelhető gombok
+                        elrendezésének és praktikus lefelé hajtható érintőképernyőjének köszönhetően sokoldalúságot
+                        nyújt, anélkül hogy túlzsúfolná a klasszikus stílusú burkolatot.<br><br>
+
+                        Hiányozhatnak néhány haladóbb jellemzője a drágább versenytársakhoz képest - beleértve a
+                        mikrofon- és USB-C portokat -, de kiválóan teljesít fényképezőgépként. Valójában azt találtuk,
+                        hogy ez a legfotócentrikusabb fényképezőgép a kategóriájában, kiváló képeket készített
+                        tesztjeink során.<br><br>
+
+                        Az Advanced Photo mód segítségével könnyen kipróbálhatod a haladó technikákat, például hosszú
+                        expozíciókat, míg az a testben lévő képstabilizáló rendszer - a csúcsmodell E-M1-ből kölcsönzött
+                        - kiváló. A szenzor felbontása 20,3 MP, és mivel ez egy Micro Four Thirds fényképezőgép,
+                        rendelkezik a piac egyik legszélesebb objektív kínálatával. Talán nem fogja megragadni a
+                        címeket, de a Mark IV fantasztikus első fényképezőgép a kezdők számára.
+                    </p>
+                </div>
+                <div class="hide" id="cam3">
+                    <p class="article" style="text-align: justify;">
+                        A Fujifilm X-T30 már önmagában is csábító középkategóriás választás volt a fotózás iránt
+                        érdeklődők számára, de ez a második kiadás néhány fejlesztéssel egészíti ki az ajánlatot. Ezeket
+                        a finomhangolásokat első pillantásra nem láthatod: az X-T30 II ugyanazt a vázat és retró külsőt
+                        használja, mint elődje, ami nem rossz dolog. Ez egy vonzó dizájn, amellyel a kezdők könnyen
+                        megbirkózhatnak. Az érintőképernyő továbbra is csak dönthető, de kicsit élesebb, mint
+                        korábban.<br><br>
+
+                        A tesztelés során azt találtuk, hogy az X-T30 nem változtatja meg az első verzió
+                        teljesítményképletét. Ugyanazt az APS-C szenzort és 425 pontos AF-rendszert használja, így
+                        továbbra is egyensúlyba hozza a kiváló fényképezési készségeket a kompakt arányokkal.<br><br>
+
+                        Azonban egy új algoritmus nagyobb pontossággal követi a mozgó alanyokat. Bár nem tökéletes, úgy
+                        gondoljuk, hogy jól teljesít, amikor kiszámítható alanyokra zár. A fókuszpontok érzékenysége is
+                        javult, és azt tapasztaltuk, hogy az X-T30 II jól teljesít a részletek kiemelésében még alacsony
+                        fényviszonyok között is.<br><br>
+
+                        Nem érdemes frissíteni az eredetiről, de az első alkalommal vásárlók számára az X-T30 II képes
+                        minden területen megállni a helyét, és segíti a fotózási készségek fejlődését.
+                    </p>
+                </div>
+                <div class="hide" id="cam4">
+                    <p class="article" style="text-align: justify;">
+                        A Sony ZV-E10 egy nagy teljesítményű vlogging eszköz kompakt arányokkal, egy fantasztikus
+                        videóra fókuszáló hibrid a kezdő tartalomkészítők számára. Könnyű és zsebbarát, és akkor működik
+                        a legjobban, ha a Sony számos kompakt objektívje egyikével párosítja.<br><br>
+
+                        A tesztelés során azt találtuk, hogy 24,2 MP-es APS-C érzékelője éles 4K felvételeket és
+                        lenyűgözően részletgazdag állóképeket készít, a gyors, 425 pontos autofókusz rendszernek
+                        köszönhetően. A vakupapucs-rögzítés és az audioportok örvendetes sokoldalúságot kínálnak a
+                        fényképezési beállítások bővítéséhez is.<br><br>
+
+                        Az érintésre optimalizált menürendszer felhasználóbarátabbá tenné a Sony ZV-E10-et, a kereső
+                        hiánya pedig korlátot jelent a fotósok számára. Ennek ellenére csuklós érintőképernyője továbbra
+                        is hasznos kiegészítő a menet közbeni keretezéshez, a kamera fizikai kezelőfelülete pedig kézben
+                        is elérhető.<br><br>
+
+                        Áttekintésünk néhány hátrányt tárt fel a kezdők számára. Pásztázáskor van némi redőny, és a 4K
+                        felvétel 30p-nél tetőzik. Ám bár nem tökéletes fényképezőgépről van szó, a nagyvonalú
+                        funkciókészlet – beleértve a plug-and-play számítógépes csatlakozást az élő közvetítéshez – a
+                        ZV-E10-et lenyűgöző választássá teszi a videózás iránt érdeklődő tanulók számára.
+                    </p>
+                </div>
+                <div class="hide" id="cam5">
+                    <p class="article" style="text-align: justify;">
+                        Ha kezdő vagy, aki hosszú távú fényképezőgépet keres, úgy gondoljuk, hogy a Fujifilm X-S20
+                        fantasztikus választás. Ez a legdrágább fényképezőgép ebben az útmutatóban, és jelentős felár az
+                        X-S10-hez képest, amely ugyanazt a fényképminőséget, valamint ugyanazt a kezdőbarát kialakítást
+                        és kezelést kínálja: az egyszerűsített tárcsák megkönnyítik az X-S20 kezelését a tanulók
+                        számára, miközben elegendő kézi vezérlést biztosít. irányítani, hogy fenntartsa érdeklődését
+                        kreativitásának és készségeinek növekedésével. Azonban az X-S20 sokkal jobb videóteljesítmény és
+                        akkumulátor-élettartam.<br><br>
+
+                        Azt is gondoljuk, hogy a továbbfejlesztett automatikus fényképezési mód nagyszerű szolgáltatás a
+                        kezdők számára. Automatikusan felismeri és követi a témákat, valamint kiválasztja a
+                        jelenetbeállításokat a fényképezés alapján. A gyakorlatban ez extra erőfeszítés nélkül élénkebbé
+                        tette a képeket. A Fujifilm bevált 26,1 MP X-Trans CMOS 4 érzékelőjének köszönhetően a
+                        képminőség megbízhatóan jó. Ha videózást is tervez, a 6K/30p 4:2:2 10 bites felvétel nem fog
+                        visszatartani.<br><br>
+
+                        Áttekintésünkben azt kívántuk, bárcsak a Fujifilm időjárásálló lett volna az X-S20-on. És nem
+                        lehet elkerülni, hogy ez jelentős ráfordítást jelent az alkalmi tartalomkészítők számára. De az
+                        olyan funkciók, mint a testbe épített képstabilizátor és a dedikált vlog mód egyszerű
+                        előbeállításokkal, az X-S20-at egy nagyon alkalmas első hibridté teszik.
+                    </p>
+                </div>
+                <div class="hide" id="cam6">
+                    <p class="article" style="text-align: justify;">
+                        Lényegében a Nikon Z fc ugyanaz, mint a Nikon Z50. Ez jó hír, mert 20,9 MP-es APS-C érzékelője
+                        és hibrid autofókusz rendszere 30 képkocka/mp sebességgel részletgazdag állóképek és masszív 4K
+                        felvételek készítésére képes. A Z fc-t a karosszéria különbözteti meg, amelyet a klasszikus
+                        Nikon FM2 tiszteletére terveztek. Méretei nagyjából megegyeznek analóg ősével, és nincs hiány a
+                        nyolcvanas évekbeli eredetéhez illő retro stílusban.<br><br>
+
+                        Ezek az átgondolt visszajelzések azt jelentik, hogy a Nikon Z fc egy jellegzetes fényképezőgép.
+                        Kezdőknek is jobb, mint a Z50, köszönhetően a változtatható szögű kijelzőnek, amely rugalmasabbá
+                        teszi a kreatív keretezést. Nem ellenáll az időjárásnak (nem mintha meg akarná kockáztatni, hogy
+                        ilyen lenyűgöző kamerát használjon rossz időben), és hiányzik belőle a Z50 mély markolata
+                        is.<br><br>
+
+                        Ha rendszeresen babrál az expozíciós beállításokkal, azt találtuk, hogy a dedikált expozíciós
+                        tárcsák intuitívabb módszer, mint az általános parancstárcsák, ha már rájöttél. Az ISO, a
+                        zársebesség és az expozíciókompenzáció dedikált tárcsája is remekül néz ki – ez az, ami korábban
+                        is megkülönböztette a Fujifilmet. A natív objektívek objektívvezérlő gyűrűt is kínálnak, amely
+                        testreszabható a fókusz és a rekesznyílás között. Ha ezt kombinálja a Z fc automatikus ISO-jával
+                        és zársebesség-szabályozásával, akkor pillanatok alatt indulhat a fényképezési stílusához
+                        igazodva.
+                    </p>
+                </div>
+                <div class="hide" id="cam7">
+                    <p class="article" style="text-align: justify;">
+                        A Nikon D3500 az egyetlen DSLR a listán. Miért? Nos, ezeket a kamerákat – amelyek optikai
+                        keresőjükkel különböznek a tükör nélküli vetélytársaktól – a vezető kameragyártók közül sokan
+                        lassan kivonják a forgalomból, a fejlettebb tükör nélküli modellek javára. De ha a fotózás a fő
+                        tevékenysége, és a videó specifikációi valóban nem fontosak, a Nikon D3500 fantasztikus,
+                        alacsony költségvetésű kezdő fényképezőgép-választás. A kiváló minőségű 24,2 MP-es APS-C
+                        érzékelővel ellátott D3500 részletes, tónusban gazdag képeket készít.<br><br>
+
+                        Első ránézésre kevésnek tűnik a funkciókban, de a Nikon D3500 rendelkezik egy rendkívül
+                        praktikus, dedikált útmutató móddal, amely a tárcsán található. A Guide Mode, egy alapvető
+                        virtuális fényképezési oktató, a tesztelés során értékes funkciónak bizonyult a kezdők számára.
+                        Ha nagyon érzékeny, bízzon benne, hogy végigvezeti a fényképezőgép összes funkcióján, beleértve
+                        a fényképezőgépen belüli képszerkesztést is. Testre szabható úgy, hogy teljes körű segítséget
+                        nyújtson, vagy fejlettebb irányítást tesz lehetővé, ahogy egyre nő a bizalom és a
+                        tapasztalat.<br><br>
+
+                        A D3500-hoz két kit-objektív áll rendelkezésre, de javasoljuk, hogy a DX 18-55 VR kitobjektívet
+                        válassza. A VR a Vibration Reduction rövidítése, és töredékével többe kerül, mint a másik
+                        lehetőség. De ha a VR-stabilizálás engedélyezve van, jobb kézi felvételeket készíthet, különösen
+                        gyenge fényviszonyok között.
+                    </p>
+                </div>
+                <div class="hide" id="cam8">
+                    <p class="article" style="text-align: justify;">
+                        Ha inkább egy kompakt fényképezőgépen, inkább egy nagyobb tükör nélküli modellen vagy DSLR-en
+                        szeretné elsajátítani a fotózást, akkor a Lumix ZS200 (vagy az Egyesült Államokon kívül ismert
+                        TZ200) a legjobb választás. A teszt során szépen részletgazdag felvételeket készített, amelyek
+                        nem csak természetes, de fényes és élénk megjelenésűek, de nagyon jól megállják a helyüket a
+                        nagyobb szenzorokat élvező fényképezőgépekkel szemben is.<br><br>
+
+                        Úgy nézhet ki, mint egy célzás és lövés kamera, de a ZS200 egy rendkívül sokoldalú objektívet
+                        (24-360 mm-es gyújtótávolsággal), 1 hüvelykes érzékelőt és kézi vezérlések széles skáláját
+                        kombinálja a teljes kreatív irányítás érdekében. Az objektív tetején és a henger körül található
+                        vezérlőtárcsáknak köszönhetően gyorsan beállíthatja az olyan beállításokat, mint a rekesznyílás
+                        vagy a zársebesség, miközben kint van az utcán.<br><br>
+
+                        És bár az elektronikus kereső kicsi lehet, szilárd, 2,33 millió képpontos felbontást kínál, és
+                        egy másik nagy áldás a telefonkamerákhoz képest. Használja a 4K-s videót és az intuitív
+                        érintőképernyős felületet, és a ZS200 remek kezdő kamera azok számára, akik kicsi és diszkrét
+                        dolgokban kézi vezérlést végeznek.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+
+
+        <footer>
+            <p class="footer"><u>Források:</u></p>
+            <br>
+            <a class="nav" href="https://www.techradar.com/best/best-camera-for-beginners">Timothy Coleman: The best camera for beginners 2024</a>
+            <p class="footer" style="display: inline;"><b> | </b></p>
+            <a class="nav" href="https://i1.adis.ws/i/canon/eos-r10-frt_range_9feaf965e90e48d3a164d106d9939020
+            ">Canon R10 eleje</a>
+            <p class="footer" style="display: inline;"><b> | </b></p>
+            <a class="nav" href="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_125223931/mobile_786_587_png/CANON-EOS-R10-v%C3%A1z-%285331C003%29
+            ">Canon R10 hátulja</a>
+            <p class="footer" style="display: inline;"><b> | </b></p>
+            <a class="nav" href="https://www.fotoplus.hu/img/58900/770-V207130BE000/770-V207130BE000.webp?time=1697636850
+            ">Olympus OM-D E-M10 e.</a>
+            <p class="footer" style="display: inline;"><b> | </b></p>
+            <a class="nav" href="https://www.fotoplus.hu/img/58900/770-V207130BE000_altpic_1/770-V207130BE000.webp?time=1697636850
+            ">Olympus OM-D E-M10 h.</a>
+            <p class="footer" style="display: inline;"><b> | </b></p>
+            <a class="nav" href="https://www.fotoshirek.hu/wp-content/uploads/2021/09/Fujifilm-XT-30-II-2-scaled-e1632764589151.jpg
+            ">Fujifilm X-T30 e.</a>
+            <p class="footer" style="display: inline;"><b> | </b></p>
+            <a class="nav" href="https://media.currys.biz/i/currysprod/10249875_001?$l-large$&fmt=auto
+            ">Fujifilm X-T30 h.</a>
+            <br>
+            <a class="nav" href="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_86485899/mobile_786_587_png/SONY-ZV-E10-vlogkamera-v%C3%A1z
+            ">Sony ZV-E10 e.</a>
+            <p class="footer" style="display: inline;"><b> | </b></p>
+            <a class="nav" href="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_86520363/fee_786_587_png/SONY-ZV-E10-vlogkamera-v%C3%A1z
+            ">Sony ZV-E10 h.</a>
+            <p class="footer" style="display: inline;"><b> | </b></p>
+            <a class="nav" href="https://p1.akcdn.net/full/59695.fujifilm-x-s20-body-16781826.jpg
+            ">Fujifilm X-S20 e.</a>
+            <p class="footer" style="display: inline;"><b> | </b></p>
+            <a class="nav" href="https://p1.akcdn.net/gallery/206874/full/2156284.fujifilm-x-s20-body-16781826.jpg
+            ">Fujifilm X-S20 h.</a>
+            <p class="footer" style="display: inline;"><b> | </b></p>
+            <a class="nav" href="https://www.fotoplus.hu/img/58900/740-VOA090K001_altpic_1/740-VOA090K001.webp?time=1702555546
+            ">Nikon Z fc e.</a>
+            <p class="footer" style="display: inline;"><b> | </b></p>
+            <a class="nav" href="https://www.fotoplus.hu/img/58900/740-VOA090K001_altpic_2/740-VOA090K001.webp?time=1702555546
+            ">Nikon Z fc h.</a>
+            <p class="footer" style="display: inline;"><b> | </b></p>
+            <a class="nav" href="https://p1.akcdn.net/full/518036709.nikon-d3500-af-p-18-55mm-vr-vba550k001.jpg
+            ">Nikon D3500 e.</a>
+            <p class="footer" style="display: inline;"><b> | </b></p>
+            <a class="nav" href="https://p1.akcdn.net/gallery/424636035/full/789792.nikon-d3500-af-p-18-55mm-vr-vba550k001.jpg
+            ">Nikon D3500 h.</a>
+            <p class="footer" style="display: inline;"><b> | </b></p>
+            <a class="nav" href="https://store.bandccamera.com/cdn/shop/products/panasonic-lumix-dc-zs200-digital-camera-black-789624.png?v=1645733448&width=500
+            ">Panasonic Lumix ZS200 e.</a>
+            <p class="footer" style="display: inline;"><b> | </b></p>
+            <a class="nav" href="https://store.bandccamera.com/cdn/shop/products/panasonic-lumix-dc-zs200-digital-camera-black-907604_1024x.png?v=1645733448
+            ">Panasonic Lumix ZS200 h.</a>
+            <p class="footer" style="display: inline;"><b> | </b></p>
+            <a class="nav" href="https://logos-world.net/google-translate-logo/
+            ">Google Fordító logo</a>
+            <br><br>
+            <p class="footer">Copyright © Zalán Deme</p>
+        </footer>
+    </body>
+</div>
+
+
+
+</html>

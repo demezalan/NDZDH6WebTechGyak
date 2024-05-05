@@ -1,0 +1,94 @@
+{
+    "bodies": {
+        "body": [
+            {
+                "id": 1,
+                "brand": "Canon",
+                "type": "EOS R10",
+                "sensor": "APS-C",
+                "resolution": "24.2 MP",
+                "monitor": "2.95-inch kihajtható érintőképernyő",
+                "autofocus": "651-area AF",
+                "shootingRate": "15fps (mechanikus), 25fps (elektronikus)",
+                "video": "4K 60fps"
+            },
+            {
+                "id": 2,
+                "brand": "Olympus",
+                "type": "OM-D E-M10 Mark IV",
+                "sensor": "Micro Four Thirds",
+                "resolution": "20.3 MP",
+                "monitor": "3-inch kihajtható érintőképernyő",
+                "autofocus": "121-pontos kontraszt detekciós AF",
+                "shootingRate": "15 fps",
+                "video": "4K 30fps"
+            },
+            {
+                "id": 3,
+                "brand": "Fujifilm",
+                "type": "X-T30 Mark II",
+                "sensor": "APS-C",
+                "resolution": "26.1 MP",
+                "monitor": "3-inch kihajtható érintőképernyő",
+                "autofocus": "425-pontos AF",
+                "shootingRate": "8 fps",
+                "video": "4K"
+            },
+            {
+                "id": 4,
+                "brand": "Sony",
+                "type": "ZV-E10",
+                "sensor": "APS-C",
+                "resolution": "24.2 MP",
+                "monitor": "3-inch kihajtható érintőképernyő",
+                "autofocus": "425-pontos AF",
+                "shootingRate": "11 fps",
+                "video": "4K 30fps"
+            },
+            {
+                "id": 5,
+                "brand": "Fujifilm",
+                "type": "X-S20",
+                "sensor": "APS-C",
+                "resolution": "26.1 MP",
+                "monitor": "3-inch többállású érintőképernyő",
+                "autofocus": "425-pontos AF",
+                "shootingRate": "8fps (mechanikus), 30fps (elektronikus)",
+                "video": "6.2K 30fps"
+            },
+            {
+                "id": 6,
+                "brand": "Nikon",
+                "type": "Z fc",
+                "sensor": "APS-C",
+                "resolution": "20.9 MP",
+                "monitor": "3-inch többállású érintőképernyő",
+                "autofocus": "209-pontos AF",
+                "shootingRate": "11 fps",
+                "video": "4K 30fps"
+            },
+            {
+                "id": 7,
+                "brand": "Nikon",
+                "type": "D3500",
+                "sensor": "APS-C",
+                "resolution": "24.2 MP",
+                "monitor": "3-inch fix állású",
+                "autofocus": "11-pontos AF",
+                "shootingRate": "5 fps",
+                "video": "1080p"
+            },
+            {
+                "id": 8,
+                "brand": "Panasonic",
+                "type": "Lumix ZS200",
+                "sensor": "1-inches",
+                "resolution": "20.1 MP",
+                "monitor": "3-inch fix állású érintő",
+                "autofocus": "",
+                "shootingRate": "10 fps",
+                "video": "4K"
+            }
+        ]
+    }
+}

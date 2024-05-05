@@ -1,0 +1,119 @@
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                background-color: rgb(44, 58, 68);
+            }
+
+            header {
+                background-image: url(../header.png);
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+                background-size: cover;
+                background-size: 100% 100%;
+                height: 120px;
+                padding: 20px;
+                text-align: center;
+            }
+
+            nav {
+                float: left;
+                width: 7%;
+                height: 560px;
+                background: rgb(0, 0, 0);
+                padding: 20px;
+                text-align: left;
+            }
+
+            aside {
+                float: right;
+                width: 10%;
+                height: 560px;
+                background: rgb(27, 27, 27);
+                padding: 20px;
+                text-align: center;
+                font-size: 15px;
+            }
+
+            article {
+                padding: 40px;
+                width: 72.34%;
+                background-color: #442828be;
+                height: 520px;
+                text-align: center;
+                float: left;
+            }
+
+            footer {
+                background-image: url(../footer.png);
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+                background-size: cover;
+                background-size: 100% 100%;
+                height: 100px;
+                padding: 20px;
+                text-align: center;
+                position: relative;
+                clear: both;
+                bottom: 0;
+                margin-top: -200px;
+            }
+
+            img {
+                opacity: 0.8;
+                border-radius: 6%;
+                width: 90%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            h1 {
+                color: rgb(211, 211, 211);
+                font-family: 'DDT Cond SemiBold', monospace;
+                font-size: 57px;
+                margin: auto;
+            }
+
+            h2 {
+                color: rgba(211, 211, 211, 0.674);
+                font-family: 'DDT Cond SemiBold', monospace;
+                font-size: 30px;
+                margin: auto;
+            }
+
+            h3 {
+                font-family: 'DDT Cond SemiBold', monospace;
+                color: rgba(255, 255, 255, 0.73);
+                font-size: 20px;
+                font-weight: bold;
+                text-align: left;
+            }
+
+            p {
+                font-family: 'DDT Cond SemiBold', monospace;
+            }
+
+            p.article {
+                color: darkgray;
+                font-size: 14px;
+                text-align: center;
+            }
+
+            p.footer {
+                font-family: 'DDT Cond SemiBold', monospace;
+                color: rgb(169, 169, 169);
+                font-size: 13px;
+                text-align: center;
+            }
+
+            a {
+                font-family: 'DDT Cond SemiBold', monospace;
+                color: rgb(73, 110, 126);
+                font-weight: bolder;
+            }
+
+            a.nav {
+                font-size: 12px;
+            }

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Fényképezés titkai">
+    <meta name="keywords" content="HTML, weblap, fényképező">
+    <title>A fényképezők titkai</title>
+    <link rel="icon" type="image/x-icon" href="/lib/lens.png">
+    <style type="text/css">
+        #wrapper {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1502px;
+        }
+    </style>
+    <link rel="stylesheet" href="lib/CSSs/main.css">
+
+    <script src="lib/jquery-3.7.1.min.js" defer></script>
+    <script src="lib/main/main.js" defer></script>
+</head>
+
+
+
+
+<div id="wrapper">
+
+    <body>
+        <br>
+        <header>
+            <h1 id="title"><b>A fénykép(ező) titkai</b></h1>
+            <h3 style="color: rgba(150, 150, 150, 0.703);">Egy mély ugrás a fényképezés világába</h3>
+        </header>
+
+        <div>
+            <nav>
+                <div style="position: fixed; visibility: visible; z-index: 1;">
+                    <a class="nav" href="index.html" style="color: rgb(84, 137, 159);">FŐOLDAL</a>
+                    <br>
+                    <br>
+                    <a class="nav" href="history.html" style="color: rgba(182, 117, 93, 0.925);">A
+                        FÉNYKÉPEZÉS<br>TÖRTÉNETE</a>
+                    <br>
+                    <br>
+                    <a class="nav" href="rules.html"
+                        style="color: rgba(203, 86, 86, 0.789);">FÉNYKÉPEZÉS<br>ALAPSZABÁLYAI</a>
+                    <br>
+                    <br>
+                    <a class="nav" href="types.html"
+                        style="color: rgba(154, 96, 204, 0.823);">FÉNYKÉPEZŐGÉPEK<br>FAJTÁI</a>
+                    <br>
+                    <br>
+                    <a class="nav" href="configs.html" style="color: rgb(158, 158, 158);">NÉPSZERŰ TÍPUSOK</a>
+                    <br>
+                    <br>
+                    <a class="nav" href="settings.html" style="color: rgb(110, 193, 114);">KÜLÖNBÖZŐ<br>BEÁLLÍTÁSOK</a>
+                    <br>
+                    <br>
+                    <a class="nav" href="form.html" style="color: rgba(212, 212, 44, 0.795);">NYEREMÉNYJÁTÉK</a>
+                </div>
+            </nav>
+            <aside>
+                <div style="position: relative; top: 1150px;">
+                    <a href="#title"><img src="lib/up.png" style="width:80%"></a><br>
+                    <p class="footer" style="display: inline;">Fel az oldal<br>tetejére</p>
+                </div>
+            </aside>
+
+            <article id="upperLeft">
+                <br>
+                <div style="background-image: url(lib/main/lensCropped.png);
+                            margin: auto;
+                            text-align: center;
+                            background-repeat: no-repeat;
+                            background-position:top;
+                            height: 450px;
+                            background-size: 420px;">
+
+                    <img id="rotatingImage" src="lib/main/aperture.png"
+                        style="width: 302px; position: relative; top: 58px; left: 0px;">
+                </div>
+            </article>
+            <article id="upperRight">
+                <br>
+                <br>
+                <br>
+                <h3>Hogy más szemmel lásd a világot..</h3>
+                <br>
+                <br>
+                <br>
+                <p class="article">Üdvözlet a fényképezés varázslatos világában! Az emberiség történetének egyik
+                    legkifinomultabb és
+                    legmegragadóbb művészeti formájával ismerkedhetsz most meg. Ezen az oldalon lehetőséged van egy
+                    átfogó
+                    képet ;&#41; szerezni arról, hogy mit rejt a
+                    fényképezés sokszínű univerzuma. Olvashatsz a fényképezés történelméről, fotós technikákról,
+                    különböző kamerafajtákról, népszerű típusokról és mindezen felül még nyereményben is
+                    részesülhetsz.<br>
+                    Fedezd fel a világot egy új perspektívából!</p>
+                <br>
+                <br>
+            </article>
+
+        </div>
+
+
+        <div>
+            <article id="lowerLeft">
+                <img id="evolution" class="hide" src="lib/main/evolution.jpg" style="position: relative; top: 50px;">
+                <img id="rules" class="hide" src="lib/main/rules.webp" style="position: relative; top: 150px;">
+                <img id="types" class="hide" src="lib/main/types.png" style="position: relative; top: 230px;">
+                <img id="configs" class="hide" src="lib/main/configs.webp" style="position: relative; top: 410px;">
+                <img id="settings" class="hide" src="lib/main/settings.jpg" style="position: relative; top: 530px;">
+                <img id="prize" class="hide" src="lib/main/prize.png" style="position: relative; top: 600px;">
+            </article>
+            <article id="lowerRight">
+                <h3>Ugorj bele az következő témákba egy kattintással:</h3>
+                <br>
+                <div id="evolution" onclick="window.location = 'history.html'">
+                    <br>
+                    <a class="subPages">A fényképezés története</a>
+                    <p class="article">Történeti összefoglaló arról, hogy hogyan jutott el ez a művészet a
+                        kezdetektől a mai állapotáig.</p>
+                    <br>
+                </div>
+                <div id="rules" onclick="window.location = 'rules.html'">
+                    <br>
+                    <a class="subPages">Fényképezés alapszabályai</a>
+                    <p class="article">A legfontosabb szabályok, amiket ha betartasz, sokat dobnak majd a fotóidon.</p>
+                    <br>
+                </div>
+                <div id="types" onclick="window.location = 'types.html'">
+                    <br>
+                    <a class="subPages">Fényképezőgépek fajtái</a>
+                    <p class="article">A ma használatos fényképezőgépek bemutatása, előnyeikkel és hátrányaikkal.</p>
+                    <br>
+                </div>
+                <div id="configs" onclick="window.location = 'configs.html'">
+                    <br>
+                    <a class="subPages">Népszerű típusok</a>
+                    <p class="article">A legnépszerűbb típusok manapság, amelyekkel biztosan nem lősz mellé, ha első
+                        gépet keresel magadnak!</p>
+                    <br>
+                </div>
+                <div id="settings" onclick="window.location = 'settings.html'">
+                    <br>
+                    <a class="subPages">Különböző beállítások</a>
+                    <p class="article">Látványos szemléltetés, amellyel könnyen meg lehet érteni, hogy mi mire való.
+                    </p>
+                    <br>
+                </div>
+                <div id="prize" onclick="window.location = 'form.html'">
+                    <br>
+                    <a class="subPages" style="color: rgba(225, 167, 92, 0.756);">Nyereményjáték</a>
+                    <p class="article">Töltsd ki még ma, hogy értékes<sup>1</sup> nyereményekhez juthass!</p>
+                    <br>
+                </div>
+                <p class="article" style="font-size: 11px;"><sup>1</sup>: ez relatív lehet..</p>
+            </article>
+        </div>
+
+        <footer>
+            <p class="footer"><u>Források:</u></p>
+            <a class="nav" href="https://www.pngegg.com/en/png-beplo">Lencse</a>
+            <p class="footer" style="display: inline;"><b> | </b></p>
+            <a class="nav"
+                href="https://www.vecteezy.com/png/9304519-camera-shutter-aperture-clipart-design-illustration">Rekesz</a>
+            <p class="footer" style="display: inline;"><b> | </b></p>
+            <a class="nav" href="https://pic.yupoo.com/fotomag/e0de09aa/6f0c05e0.jpg">Evolúció</a>
+            <p class="footer" style="display: inline;"><b> | </b></p>
+            <a class="nav" href="https://static.wixstatic.com/media/9738cd_f6ff6cfc2eb440beb9b738ea6f32bb73~mv2.jpg/v1/fill/w_1000,h_706,al_c,q_85,enc_auto/9738cd_f6ff6cfc2eb440beb9b738ea6f32bb73~mv2.jpg
+            ">Aranyszabályok</a>
+            <p class="footer" style="display: inline;"><b> | </b></p>
+            <a class="nav" href="https://img.fixthephoto.com/blog/images/gallery/news_preview_mob_image__preview_17104.png
+            ">Fajták</a>
+            <p class="footer" style="display: inline;"><b> | </b></p>
+            <a class="nav" href="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2014/12/popular-dslrs.jpg
+            ">Típusok</a>
+            <a class="nav" href="https://edwinsetiawan.wordpress.com/wp-content/uploads/2008/05/img_8809.jpg
+            ">Beállítások</a>
+            <p class="footer" style="display: inline;"><b> | </b></p>
+            <a class="nav" href="https://budaorsinaplo.hu/wp-content/uploads/2017/02/4246b121d2dc949b8f082c5f57840a3b.jpg
+            ">Nyereményjáték</a>
+            <br><br>
+            <p class="footer">Copyright © Zalán Deme</p>
+        </footer>
+    </body>
+</div>
+
+</html>

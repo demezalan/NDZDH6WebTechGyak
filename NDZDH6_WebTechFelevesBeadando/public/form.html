@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Fényképezés titkai">
+    <meta name="keywords" content="HTML, weblap, fényképező">
+    <link rel="icon" type="image/x-icon" href="/lib/lens.png">
+    <title>A fényképezők titkai: nyereményjáték</title>
+    <style type="text/css">
+        #wrapper {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1502px;
+        }
+    </style>
+    <link rel="stylesheet" href="lib/CSSs/form.css">
+
+    <script src="lib/jquery-3.7.1.min.js" defer></script>
+    <script src="lib/form/form.js" defer></script>
+</head>
+
+
+
+
+<div id="wrapper">
+
+    <body>
+        <br>
+        <header>
+            <h1 id="title"><b>A fénykép(ező) titkai</b></h1>
+            <br>
+            <h2>Nyereményjáték</h2>
+        </header>
+
+        <div>
+            <nav>
+                <div style="position: fixed; visibility: visible; z-index: 1;">
+                    <a class="nav" href="index.html" style="color: rgb(84, 137, 159);">FŐOLDAL</a>
+                    <br>
+                    <br>
+                    <a class="nav" href="history.html" style="color: rgba(182, 117, 93, 0.925);">A
+                        FÉNYKÉPEZÉS<br>TÖRTÉNETE</a>
+                    <br>
+                    <br>
+                    <a class="nav" href="rules.html"
+                        style="color: rgba(203, 86, 86, 0.789);">FÉNYKÉPEZÉS<br>ALAPSZABÁLYAI</a>
+                    <br>
+                    <br>
+                    <a class="nav" href="types.html"
+                        style="color: rgba(154, 96, 204, 0.823);">FÉNYKÉPEZŐGÉPEK<br>FAJTÁI</a>
+                    <br>
+                    <br>
+                    <a class="nav" href="configs.html" style="color: rgb(158, 158, 158);">NÉPSZERŰ TÍPUSOK</a>
+                    <br>
+                    <br>
+                    <a class="nav" href="settings.html" style="color: rgb(110, 193, 114);">KÜLÖNBÖZŐ<br>BEÁLLÍTÁSOK</a>
+                    <br>
+                    <br>
+                    <a class="nav" href="form.html" style="color: rgba(212, 212, 44, 0.795);">NYEREMÉNYJÁTÉK</a>
+                </div>
+            </nav>
+            <aside>
+                <div style="position: relative; top: 770px;">
+                    <a href="#title"><img src="lib/up.png" style="width:80%"></a><br>
+                    <p class="footer" style="display: inline;">Fel az oldal<br>tetejére</p>
+                </div>
+            </aside>
+
+            <article id="upperLeft">
+                <h3>Adottak a következő izgága fényképezőgépek:</h3><br>
+                <div class="camAnim1">
+                    <img src="lib/form/yashica.png" style="width:120px">
+                </div>
+                <div class="camAnim2">
+                    <img src="lib/form/gopro.png" style="width:75px">
+                </div>
+                <div class="camAnim3">
+                    <img src="lib/form/canon.png" style="width:75px">
+                </div>
+                <div class="camAnim4">
+                    <img src="lib/form/leica.png" style="width:75px">
+                </div>
+            </article>
+            <article id="upperRight">
+                
+                <h3>Milyen márkájú eszközök bukkannak fel?</h3>
+                <br>
+                <form id="form" name="form" action="" method="post" target="_self" action="feldolgozo.php">
+                    <p class="article" style="position: relative; left: 239px;">
+                        <input type="checkbox" id="camera1" name="camera" value="canon">
+                        <label for="camera1"> Canon</label><br>
+                        <input type="checkbox" id="camera2" name="camera" value="nikon">
+                        <label for="camera2"> Nikon</label><br>
+                        <input type="checkbox" id="camera3" name="camera" value="olympus">
+                        <label for="camera3"> Olympus</label><br>
+                        <input type="checkbox" id="camera4" name="camera" value="sony">
+                        <label for="camera4"> Sony</label><br>
+                        <input type="checkbox" id="camera5" name="camera" value="fujifilm">
+                        <label for="camera5"> Fujifilm</label><br>
+                        <input type="checkbox" id="camera6" name="camera" value="yashica">
+                        <label for="camera6"> Yashica</label><br>
+                        <input type="checkbox" id="camera7" name="camera" value="panasonic">
+                        <label for="camera7"> Panasonic</label><br>
+                        <input type="checkbox" id="camera8" name="camera" value="leica">
+                        <label for="camera8"> Leica</label><br>
+                        <input type="checkbox" id="camera9" name="camera" value="gopro">
+                        <label for="camera9"> GoPro</label><br><br><br><br>
+                    </p>
+                    <h3>A nyereményjátékban való részvételhez<br>add meg személyes adataidat is:</h3>
+                    <br>
+                    <div style="position: relative; left: 100px;">
+                        <p class="article">Név:&nbsp;&nbsp;
+                            <input type="text" id="name" name="name" required
+                                pattern="([A-ZÁÉÍÓÖŐÚÜŰ a-záéíóöőúüű]){5,30}" title="Minimum 5 karakter"
+                                placeholder="Írd be a neved" autocomplete="off">
+                        </p>
+                        <p class="article">
+                            <label for="birthday">Születési idő:&nbsp;&nbsp;</label>
+                            <input type="date" id="birthday" name="birthday" required min="1900-01-01" max="2014-05-06">
+                        </p>
+                        <p class="article">Nem:
+                            &nbsp;&nbsp;<input type="radio" id="female" name="gender" value="female" required>
+                            <label for="female">Nő</label>
+                            &nbsp;&nbsp;<input type="radio" id="male" name="gender" value="male" required>
+                            <label for="male">Férfi</label><br>
+                        </p>
+                        <p class="article">Az esélyeidet növelő kedvenc favicced: <br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<textarea name="message" rows="10" cols="30">Hogy hívják a kopasz teherautót?
+                        
+
+
+
+TarIfa.
+                        </textarea>
+                        </p>
+                        <p class="article">
+                            <label for="favcolor">A megnyerhető nyakpánt választott színe:&nbsp;&nbsp;</label>
+                            <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+
+                    </div>
+                </form>
+                <div>
+                    <input id="submit" type="submit" value="ELKÜLD" form="form"
+                        onsubmit="return validateForm()"
+                        style="width: 150px; height: 35px; background-color: rgb(76, 207, 126); position: relative; left: 250px;">
+                </div>
+            </article>
+
+        </div>
+
+        <footer>
+            <p class="footer"><u>Források:</u></p>
+            <a class="nav" href="https://kamerastore.com/cdn/shop/files/bdf96a9dd65bae71708d2aee9c5baa01.jpg?v=1706707030&width=1946">Kép 1</a>
+            <p class="footer" style="display: inline;"><b> | </b></p>
+            <a class="nav"
+                href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1-IHHApMTsxTYAXNP4300gN733bg0DDRxm_I3ppop1Q&s">Kép 2</a><br>
+            <a class="nav" href="https://e7.pngegg.com/pngimages/34/130/png-clipart-canon-eos-7d-mark-ii-canon-eos-700d-camera-slr-camera-lens-camera-lens.png
+            ">Kép 3</a>
+            <p class="footer" style="display: inline;"><b> | </b></p>
+            <a class="nav"
+                href="https://e7.pngegg.com/pngimages/610/516/png-clipart-leica-m3-leica-m-monochrom-leica-m9-leica-m10-camera-electronics-camera-lens.png">Kép 4</a><br><br>
+            <p class="footer">Copyright © Zalán Deme</p>
+        </footer>
+    </body>
+</div>
+
+</html>

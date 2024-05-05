@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Fényképezés titkai">
+    <meta name="keywords" content="HTML, weblap, fényképező">
+    <link rel="icon" type="image/x-icon" href="/lib/lens.png">
+    <title>A fényképezők titkai: beállításai</title>
+    <style type="text/css">
+        #wrapper {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1502px;
+        }
+    </style>
+    <link rel="stylesheet" href="lib/CSSs/settings.css">
+
+    <script src="lib/jquery-3.7.1.min.js" defer></script>
+    <script src="lib/settings/settings.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+
+
+
+<div id="wrapper">
+
+    <body>
+        <br>
+        <header>
+            <h1 id="title"><b>A fénykép(ező) titkai</b></h1>
+            <br>
+            <h2>Beállítások</h2>
+        </header>
+
+        <div>
+            <nav>
+                <div style="position: fixed; visibility: visible; z-index: 1;">
+                    <a class="nav" href="index.html" style="color: rgb(84, 137, 159);">FŐOLDAL</a>
+                    <br>
+                    <br>
+                    <a class="nav" href="history.html" style="color: rgba(182, 117, 93, 0.925);">A
+                        FÉNYKÉPEZÉS<br>TÖRTÉNETE</a>
+                    <br>
+                    <br>
+                    <a class="nav" href="rules.html"
+                        style="color: rgba(203, 86, 86, 0.789);">FÉNYKÉPEZÉS<br>ALAPSZABÁLYAI</a>
+                    <br>
+                    <br>
+                    <a class="nav" href="types.html"
+                        style="color: rgba(154, 96, 204, 0.823);">FÉNYKÉPEZŐGÉPEK<br>FAJTÁI</a>
+                    <br>
+                    <br>
+                    <a class="nav" href="configs.html" style="color: rgb(158, 158, 158);">NÉPSZERŰ TÍPUSOK</a>
+                    <br>
+                    <br>
+                    <a class="nav" href="settings.html" style="color: rgb(110, 193, 114);">KÜLÖNBÖZŐ<br>BEÁLLÍTÁSOK</a>
+                    <br>
+                    <br>
+                    <a class="nav" href="form.html" style="color: rgba(212, 212, 44, 0.795);">NYEREMÉNYJÁTÉK</a>
+                </div>
+            </nav>
+            <aside>
+                <div style="position: relative; top: 1390px;">
+                    <a href="#title"><img src="lib/up.png" style="width:80%"></a>
+                    <p class="footer" style="display: inline;">Fel az oldal<br>tetejére</p>
+                </div>
+            </aside>
+
+            <article id="upperLeft">
+                <div style="float: left; width: 90%;">
+                    <br>
+                    <video id="aperture" src="lib/settings/aperture.mp4"></video>
+                    <br><br><br>
+                    <input id="apertureInput" type="range" min="0" value="2" max="16" step="1"
+                        class="hideAperture"><br><br>
+                    <div id="apertureOutput"
+                        style="color: rgb(164, 164, 164); font-family: 'DDT Cond SemiBold', monospace;"
+                        class="hideAperture"></div>
+                </div>
+                <div>
+                    <br><br><br><br><br><br><br><br><br>
+                    <button id="apertureStartStop">
+                        <span class="material-symbols-outlined" style="vertical-align:middle;">
+                            play_pause
+                        </span>
+                    </button>
+                </div>
+
+            </article>
+            <article id="upperRight">
+                <br>
+                <h3>Rekeszérték</h3><br>
+                <p class="article">A rekeszérték állításakor egy pupilla-szerű gyűrű állítódik az objektívben, ezzel
+                    szabályozható a szenzorba bejutó fény mennyisége.</p>
+                <p class="article">A fényképen az lesz a különbség, hogy minél nagyobb a rekeszérték, annál több minden
+                    lesz fókuszban a képen, valamint világosabb is lesz a kép, mivel több fényt enged be az objektív.
+                </p>
+            </article>
+
+        </div>
+
+        <div>
+            <article id="middleLeft"><br>
+                <h3>ISO</h3><br>
+                <p class="article">Az ISO érték a digitális szenzor érzékenységét állítja. Kevés fénynél növeljük az
+                    értéket, sok fénynél pedig csökkentjük.</p>
+                <p class="article">Növelésével látható változás lesz az elkészült fotón, mivel amellett, hogy világosabb
+                    lesz, sokkal zajosabb is, ezért arra kell törekedni, hogy minél alacsonyabb beállítással fotózzuk
+                    képeinket.
+                </p>
+
+            </article>
+            <article id="middleRight">
+                <div style="float: right; width: 90%;">
+                    <br>
+                    <video id="iso" src="lib/settings/iso.mp4"></video>
+                    <br><br><br>
+                    <input id="isoInput" type="range" min="0" value="7" max="8" step="1" class="hideIso"><br><br>
+                    <div id="isoOutput" style="color: rgb(164, 164, 164); font-family: 'DDT Cond SemiBold', monospace;"
+                        class="hideIso"></div>
+                </div>
+                <div>
+                    <br><br><br><br><br><br><br><br><br>
+                    <button id="isoStartStop">
+                        <span class="material-symbols-outlined" style="vertical-align:middle;">
+                            play_pause
+                        </span>
+                    </button>
+                </div>
+            </article>
+        </div>
+
+        <div>
+            <article id="lowerLeft">
+                <div style="float: left; width: 90%;">
+                    <br>
+                    <video id="shutter" src="lib/settings/shutter.mp4"></video>
+                    <br><br><br>
+                    <input id="shutterInput" type="range" min="0" value="7" max="11" step="1"
+                        class="hideShutter"><br><br>
+                    <div id="shutterOutput"
+                        style="color: rgb(164, 164, 164); font-family: 'DDT Cond SemiBold', monospace;"
+                        class="hideShutter"></div>
+                </div>
+                <div>
+                    <br><br><br><br><br><br><br><br><br>
+                    <button id="shutterStartStop">
+                        <span class="material-symbols-outlined" style="vertical-align:middle;">
+                            play_pause
+                        </span>
+                    </button>
+                </div>
+            </article>
+            <article id="lowerRight">
+                <h3>Záridő</h3><br>
+                <p class="article">A záridő állításával azt lehet változtatni, hogy milyen gyorsan készül el a kép,
+                    mennyi idő alatt gyűjtsön információt a szenzor</p>
+                <p class="article">Kisebb értékre állítva a másodperc töredéke alatt készül el a fotó, ezért kisebb
+                    valószínűséggel lesznek a képen bemozdulások, ezért mozgó képnél általában ezt minél kisebbre szokás
+                    állítani. Azonban lehetnek olyan helyzetek, mikor pont arra törekszünk, hogy hosszú idő alatt
+                    készüljön el a kép, ezáltal a stabil pontok élesek maradnak, a mozgó objektumok pedig elmosódnak.
+                    Emellett éjszakai égboltfozózásnál is hosszú záridővel kell dolgozni.
+                </p>
+            </article>
+        </div>
+
+        <footer>
+            <br>
+            <p class="footer">Források: jómagam egy Canon EOS 800D segítségével</p>
+            <p class="footer">Copyright © Zalán Deme</p>
+        </footer>
+    </body>
+</div>
+
+</html>

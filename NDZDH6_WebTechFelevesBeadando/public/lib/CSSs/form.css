@@ -1,0 +1,318 @@
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                background-color: rgb(44, 58, 68);
+            }
+
+            header {
+                background-image: url(../header.png);
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+                background-size: cover;
+                background-size: 100% 100%;
+                height: 120px;
+                padding: 20px;
+                text-align: center;
+            }
+
+            nav {
+                float: left;
+                width: 7%;
+                height: 940px;
+                background: rgb(0, 0, 0);
+                padding: 20px;
+                text-align: left;
+            }
+
+            aside {
+                float: right;
+                width: 10%;
+                height: 940px;
+                background: rgb(27, 27, 27);
+                padding: 20px;
+                text-align: center;
+                font-size: 15px;
+            }
+
+            article#upperLeft {
+                padding: 40px;
+                width: 25%;
+                background-color: #7d7139b5;
+                height: 900px;
+                text-align: right;
+                float: left;
+            }
+
+            article#upperRight {
+                padding: 40px;
+                width: 42%;
+                background-color: #b7aa49c2;
+                height: 900px;
+                text-align: left;
+                float: right;
+            }
+
+            footer {
+                background-image: url(../footer.png);
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+                background-size: cover;
+                background-size: 100% 100%;
+                height: 125px;
+                padding: 20px;
+                text-align: center;
+                position: relative;
+                clear: both;
+                bottom: 0;
+                margin-top: -200px;
+            }
+
+            input:valid {
+                border-radius: 3px;
+                background-color: rgb(187, 241, 190);
+            }
+
+            input:invalid {
+                background-color: rgb(243, 191, 191);
+                border-radius: 3px;
+              }
+
+            h1 {
+                color: rgb(211, 211, 211);
+                font-family: 'DDT Cond SemiBold', monospace;
+                font-size: 57px;
+                margin: auto;
+            }
+
+            h2 {
+                color: rgba(211, 211, 211, 0.674);
+                font-family: 'DDT Cond SemiBold', monospace;
+                font-size: 30px;
+                margin: auto;
+            }
+
+            h3 {
+                font-family: 'DDT Cond SemiBold', monospace;
+                color: rgba(255, 255, 255, 0.73);
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            p {
+                font-family: 'DDT Cond SemiBold', monospace;
+            }
+
+            p.article {
+                color: rgb(41, 41, 26);
+                font-size: 16px;
+            }
+
+            p.footer {
+                font-family: 'DDT Cond SemiBold', monospace;
+                color: rgb(169, 169, 169);
+                font-size: 13px;
+                text-align: center;
+            }
+
+            a {
+                font-family: 'DDT Cond SemiBold', monospace;
+                color: rgb(73, 110, 126);
+                font-weight: bolder;
+            }
+
+            a.nav {
+                font-size: 12px;
+            }
+
+            @keyframes camAnim1 {
+                0% {
+                    left: 0px;
+                    top: 0px;
+                }
+    
+                16% {
+                    left: 290px;
+                    top: 40px;
+                }
+    
+                32% {
+                    left: 170px;
+                    top: 53px;
+                }
+    
+                50% {
+                    left: 5px;
+                    top: 28px;
+                }
+    
+                68% {
+                    left: 50px;
+                    top: 400px;
+                }
+    
+                81% {
+                    left: 73px;
+                    top: 270px;
+                }
+
+                93% {
+                    left: 173px;
+                    top: 470px;
+                }
+    
+                100% {
+                    left: 0px;
+                    top: 0px;
+                }
+            }
+    
+            @keyframes camAnim2 {
+                0% {
+                    left: 290px;
+                    top: 40px;
+                }
+    
+                16% {
+                    left: 183px;
+                    top: 5px;
+                }
+    
+                32% {
+                    left: 210px;
+                    top: 260px;
+                }
+    
+                50% {
+                    left: 10px;
+                    top: 40px;
+                }
+    
+                68% {
+                    left: 0px;
+                    top: 0px;
+                }
+    
+                84% {
+                    left: 59px;
+                    top: 76px;
+                }
+    
+                100% {
+                    left: 290px;
+                    top: 40px;
+                }
+            }
+
+            @keyframes camAnim3 {
+                0% {
+                    left: 166px;
+                    top: 77px;
+                }
+    
+                16% {
+                    left: 7px;
+                    top: 300px;
+                }
+    
+                32% {
+                    left: 300px;
+                    top: 28px;
+                }
+    
+                50% {
+                    left: 270px;
+                    top: 180px;
+                }
+    
+                68% {
+                    left: 0px;
+                    top: 9px;
+                }
+    
+                84% {
+                    left: 90px;
+                    top: 36px;
+                }
+    
+                100% {
+                    left: 166px;
+                    top: 77px;
+                }
+            }
+
+            @keyframes camAnim4 {
+                0% {
+                    left: 300px;
+                    top: 300px;
+                }
+    
+                16% {
+                    left: 240px;
+                    top: 370px;
+                }
+    
+                32% {
+                    left: 170px;
+                    top: 28px;
+                }
+    
+                50% {
+                    left: 270px;
+                    top: 46px;
+                }
+    
+                68% {
+                    left: 210px;
+                    top: 240px;
+                }
+    
+                84% {
+                    left: 60px;
+                    top: 80px;
+                }
+    
+                100% {
+                    left: 300px;
+                    top: 300px;
+                }
+            }
+
+            .camAnim1 {
+                width: 10px;
+                height: 10px;
+                position: relative;
+                animation-name: camAnim1;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+    
+            }
+    
+            .camAnim2 {
+                width: 10px;
+                height: 10px;
+                position: relative;
+                animation-name: camAnim2;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+
+            .camAnim3 {
+                width: 10px;
+                height: 10px;
+                position: relative;
+                animation-name: camAnim3;
+                animation-duration: 7s;
+                animation-iteration-count: infinite;
+            }
+
+            .camAnim4 {
+                width: 10px;
+                height: 10px;
+                position: relative;
+                animation-name: camAnim4;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+            }
