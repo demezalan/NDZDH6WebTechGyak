@@ -1,357 +1,355 @@
 {
-    "courses": {
-        "course": [
-            {
-                "id": 0,
-                "kurzusnev": "Webtech alapjai",
-                "tipus": "eloadas",
-                "eloado": "Dr. Agárdi Anita",
-                "helyszin": "A1 218",
-                "idopont": {
-                    "nap": "Hétfő",
-                    "tol": "8:00",
-                    "ig": "10:00"
-                },
-                "cim": {
-                    "utca": "Egyetemváros",
-                    "város": "Miskolc",
-                    "irányítószám": "1021"
-                },
-                "telefonszám": [
-                    {
-                        "típus": "vezetékes",
-                        "szám": "0646555-123"
-                    },
-                    {
-                        "típus": "mobil",
-                        "szám": "0670555-4567"
-                    }
-                ]
+    "courses": [
+        {
+            "id": 0,
+            "kurzusnev": "Webtech alapjai",
+            "tipus": "eloadas",
+            "eloado": "Dr. Agárdi Anita",
+            "helyszin": "A1 218",
+            "idopont": {
+                "nap": "Hétfő",
+                "tol": "8:00",
+                "ig": "10:00"
             },
-            {
-                "id": 1,
-                "kurzusnev": "Szofttech",
-                "tipus": "gyakorlat",
-                "eloado": "Tompa Tamás",
-                "helyszin": "Inf/202",
-                "idopont": {
-                    "nap": "Hétfő",
-                    "tol": "10:00",
-                    "ig": "12:00"
-                },
-                "cim": {
-                    "utca": "Egyetemváros",
-                    "város": "Miskolc",
-                    "irányítószám": "1021"
-                },
-                "telefonszám": [
-                    {
-                        "típus": "vezetékes",
-                        "szám": "0646555-123"
-                    },
-                    {
-                        "típus": "mobil",
-                        "szám": "0670555-4567"
-                    }
-                ]
+            "cim": {
+                "utca": "Egyetemvaros",
+                "varos": "Miskolc",
+                "iranyitoszam": "1021"
             },
-            {
-                "id": 2,
-                "kurzusnev": "Webtech",
-                "tipus": "gyakorlat",
-                "eloado": "Dr. Bednarik László",
-                "helyszin": "Inf/103",
-                "idopont": {
-                    "nap": "Hétfő",
-                    "tol": "12:00",
-                    "ig": "14:00"
+            "telefonszamok": [
+                {
+                    "tipus": "vezetékes",
+                    "szam": "0646555-123"
                 },
-                "cim": {
-                    "utca": "Egyetemváros",
-                    "város": "Miskolc",
-                    "irányítószám": "1021"
-                },
-                "telefonszám": [
-                    {
-                        "típus": "vezetékes",
-                        "szám": "0646555-123"
-                    },
-                    {
-                        "típus": "mobil",
-                        "szám": "0670555-4567"
-                    }
-                ]
+                {
+                    "tipus": "mobil",
+                    "szam": "0670555-4567"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "kurzusnev": "Szofttech",
+            "tipus": "gyakorlat",
+            "eloado": "Tompa Tamás",
+            "helyszin": "Inf/202",
+            "idopont": {
+                "nap": "Hétfő",
+                "tol": "10:00",
+                "ig": "12:00"
             },
-            {
-                "id": 3,
-                "kurzusnev": "Modern fizika",
-                "tipus": "eloadas",
-                "eloado": "Dr. Kovács Endre",
-                "helyszin": "A1 320",
-                "idopont": {
-                    "nap": "Kedd",
-                    "tol": "8:00",
-                    "ig": "10:00"
-                },
-                "cim": {
-                    "utca": "Egyetemváros",
-                    "város": "Miskolc",
-                    "irányítószám": "1021"
-                },
-                "telefonszám": [
-                    {
-                        "típus": "vezetékes",
-                        "szám": "0646555-123"
-                    },
-                    {
-                        "típus": "mobil",
-                        "szám": "0670555-4567"
-                    }
-                ]
+            "cim": {
+                "utca": "Egyetemvaros",
+                "varos": "Miskolc",
+                "iranyitoszam": "1021"
             },
-            {
-                "id": 4,
-                "kurzusnev": "Java programozás",
-                "tipus": "eloadas",
-                "eloado": "Szűcs Miklós",
-                "helyszin": "Inf/101",
-                "idopont": {
-                    "nap": "Kedd",
-                    "tol": "10:00",
-                    "ig": "12:00"
+            "telefonszamok": [
+                {
+                    "tipus": "vezetékes",
+                    "szam": "0646555-123"
                 },
-                "cim": {
-                    "utca": "Egyetemváros",
-                    "város": "Miskolc",
-                    "irányítószám": "1021"
-                },
-                "telefonszám": [
-                    {
-                        "típus": "vezetékes",
-                        "szám": "0646555-123"
-                    },
-                    {
-                        "típus": "mobil",
-                        "szám": "0670555-4567"
-                    }
-                ]
+                {
+                    "tipus": "mobil",
+                    "szam": "0670555-4567"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "kurzusnev": "Webtech",
+            "tipus": "gyakorlat",
+            "eloado": "Dr. Bednarik László",
+            "helyszin": "Inf/103",
+            "idopont": {
+                "nap": "Hétfő",
+                "tol": "12:00",
+                "ig": "14:00"
             },
-            {
-                "id": 5,
-                "kurzusnev": "Adatbázis II.",
-                "tipus": "gyakorlat",
-                "eloado": "Szűcs Miklós",
-                "helyszin": "Inf/103",
-                "idopont": {
-                    "nap": "Kedd",
-                    "tol": "12:00",
-                    "ig": "14:00"
-                },
-                "cim": {
-                    "utca": "Egyetemváros",
-                    "város": "Miskolc",
-                    "irányítószám": "1021"
-                },
-                "telefonszám": [
-                    {
-                        "típus": "vezetékes",
-                        "szám": "0646555-123"
-                    },
-                    {
-                        "típus": "mobil",
-                        "szám": "0670555-4567"
-                    }
-                ]
+            "cim": {
+                "utca": "Egyetemvaros",
+                "varos": "Miskolc",
+                "iranyitoszam": "1021"
             },
-            {
-                "id": 6,
-                "kurzusnev": "Szofttech",
-                "tipus": "eloadas",
-                "eloado": "Tompa Tamás",
-                "helyszin": "III-as előadó",
-                "idopont": {
-                    "nap": "Szerda",
-                    "tol": "8:00",
-                    "ig": "9:00"
+            "telefonszamok": [
+                {
+                    "tipus": "vezetékes",
+                    "szam": "0646555-123"
                 },
-                "cim": {
-                    "utca": "Egyetemváros",
-                    "város": "Miskolc",
-                    "irányítószám": "1021"
-                },
-                "telefonszám": [
-                    {
-                        "típus": "vezetékes",
-                        "szám": "0646555-123"
-                    },
-                    {
-                        "típus": "mobil",
-                        "szám": "0670555-4567"
-                    }
-                ]
+                {
+                    "tipus": "mobil",
+                    "szam": "0670555-4567"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "kurzusnev": "Modern fizika",
+            "tipus": "eloadas",
+            "eloado": "Dr. Kovács Endre",
+            "helyszin": "A1 320",
+            "idopont": {
+                "nap": "Kedd",
+                "tol": "8:00",
+                "ig": "10:00"
             },
-            {
-                "id": 7,
-                "kurzusnev": "Adatbázis II.",
-                "tipus": "eloadas",
-                "eloado": "Dr. Kovács László",
-                "helyszin": "XXXVII-es előadó",
-                "idopont": {
-                    "nap": "Szerda",
-                    "tol": "10:00",
-                    "ig": "12:00"
-                },
-                "cim": {
-                    "utca": "Egyetemváros",
-                    "város": "Miskolc",
-                    "irányítószám": "1021"
-                },
-                "telefonszám": [
-                    {
-                        "típus": "vezetékes",
-                        "szám": "0646555-123"
-                    },
-                    {
-                        "típus": "mobil",
-                        "szám": "0670555-4567"
-                    }
-                ]
+            "cim": {
+                "utca": "Egyetemvaros",
+                "varos": "Miskolc",
+                "iranyitoszam": "1021"
             },
-            {
-                "id": 8,
-                "kurzusnev": "Biztonságvédelem",
-                "tipus": "eloadas",
-                "eloado": "Wagner György",
-                "helyszin": "XXXIII-as előadó",
-                "idopont": {
-                    "nap": "Szerda",
-                    "tol": "12:00",
-                    "ig": "14:00"
+            "telefonszamok": [
+                {
+                    "tipus": "vezetékes",
+                    "szam": "0646555-123"
                 },
-                "cim": {
-                    "utca": "Egyetemváros",
-                    "város": "Miskolc",
-                    "irányítószám": "1021"
-                },
-                "telefonszám": [
-                    {
-                        "típus": "vezetékes",
-                        "szám": "0646555-123"
-                    },
-                    {
-                        "típus": "mobil",
-                        "szám": "0670555-4567"
-                    }
-                ]
+                {
+                    "tipus": "mobil",
+                    "szam": "0670555-4567"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "kurzusnev": "Java programozás",
+            "tipus": "eloadas",
+            "eloado": "Szűcs Miklós",
+            "helyszin": "Inf/101",
+            "idopont": {
+                "nap": "Kedd",
+                "tol": "10:00",
+                "ig": "12:00"
             },
-            {
-                "id": 9,
-                "kurzusnev": "Optimalizálás",
-                "tipus": "eloadas",
-                "eloado": "Dr. Körei Attila",
-                "helyszin": "XXXIII-as előadó",
-                "idopont": {
-                    "nap": "Szerda",
-                    "tol": "14:00",
-                    "ig": "16:00"
-                },
-                "cim": {
-                    "utca": "Egyetemváros",
-                    "város": "Miskolc",
-                    "irányítószám": "1021"
-                },
-                "telefonszám": [
-                    {
-                        "típus": "vezetékes",
-                        "szám": "0646555-123"
-                    },
-                    {
-                        "típus": "mobil",
-                        "szám": "0670555-4567"
-                    }
-                ]
+            "cim": {
+                "utca": "Egyetemvaros",
+                "varos": "Miskolc",
+                "iranyitoszam": "1021"
             },
-            {
-                "id": 10,
-                "kurzusnev": "Optimalizálás",
-                "tipus": "gyakorlat",
-                "eloado": "Dr. Körei Attila",
-                "helyszin": "XXXIII-as előadó",
-                "idopont": {
-                    "nap": "Szerda",
-                    "tol": "16:00",
-                    "ig": "18:00"
+            "telefonszamok": [
+                {
+                    "tipus": "vezetékes",
+                    "szam": "0646555-123"
                 },
-                "cim": {
-                    "utca": "Egyetemváros",
-                    "város": "Miskolc",
-                    "irányítószám": "1021"
-                },
-                "telefonszám": [
-                    {
-                        "típus": "vezetékes",
-                        "szám": "0646555-123"
-                    },
-                    {
-                        "típus": "mobil",
-                        "szám": "0670555-4567"
-                    }
-                ]
+                {
+                    "tipus": "mobil",
+                    "szam": "0670555-4567"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "kurzusnev": "Adatbázis II.",
+            "tipus": "gyakorlat",
+            "eloado": "Szűcs Miklós",
+            "helyszin": "Inf/103",
+            "idopont": {
+                "nap": "Kedd",
+                "tol": "12:00",
+                "ig": "14:00"
             },
-            {
-                "id": 11,
-                "kurzusnev": "Biztonságvédelem",
-                "tipus": "gyakorlat",
-                "eloado": "Wagner György",
-                "helyszin": "Inf/101",
-                "idopont": {
-                    "nap": "Csütörtök",
-                    "tol": "8:00",
-                    "ig": "10:00"
-                },
-                "cim": {
-                    "utca": "Egyetemváros",
-                    "város": "Miskolc",
-                    "irányítószám": "1021"
-                },
-                "telefonszám": [
-                    {
-                        "típus": "vezetékes",
-                        "szám": "0646555-123"
-                    },
-                    {
-                        "típus": "mobil",
-                        "szám": "0670555-4567"
-                    }
-                ]
+            "cim": {
+                "utca": "Egyetemvaros",
+                "varos": "Miskolc",
+                "iranyitoszam": "1021"
             },
-            {
-                "id": 12,
-                "kurzusnev": "Java programozás",
-                "tipus": "gyakorlat",
-                "eloado": "Csépányi-Fürjes Lászó",
-                "helyszin": "Inf/101",
-                "idopont": {
-                    "nap": "Csütörtök",
-                    "tol": "10:00",
-                    "ig": "12:00"
+            "telefonszamok": [
+                {
+                    "tipus": "vezetékes",
+                    "szam": "0646555-123"
                 },
-                "cim": {
-                    "utca": "Egyetemváros",
-                    "város": "Miskolc",
-                    "irányítószám": "1021"
+                {
+                    "tipus": "mobil",
+                    "szam": "0670555-4567"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "kurzusnev": "Szofttech",
+            "tipus": "eloadas",
+            "eloado": "Tompa Tamás",
+            "helyszin": "III-as előadó",
+            "idopont": {
+                "nap": "Szerda",
+                "tol": "8:00",
+                "ig": "9:00"
+            },
+            "cim": {
+                "utca": "Egyetemvaros",
+                "varos": "Miskolc",
+                "iranyitoszam": "1021"
+            },
+            "telefonszamok": [
+                {
+                    "tipus": "vezetékes",
+                    "szam": "0646555-123"
                 },
-                "telefonszám": [
-                    {
-                        "típus": "vezetékes",
-                        "szám": "0646555-123"
-                    },
-                    {
-                        "típus": "mobil",
-                        "szám": "0670555-4567"
-                    }
-                ]
-            }
-        ]
-    }
+                {
+                    "tipus": "mobil",
+                    "szam": "0670555-4567"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "kurzusnev": "Adatbázis II.",
+            "tipus": "eloadas",
+            "eloado": "Dr. Kovács László",
+            "helyszin": "XXXVII-es előadó",
+            "idopont": {
+                "nap": "Szerda",
+                "tol": "10:00",
+                "ig": "12:00"
+            },
+            "cim": {
+                "utca": "Egyetemvaros",
+                "varos": "Miskolc",
+                "iranyitoszam": "1021"
+            },
+            "telefonszamok": [
+                {
+                    "tipus": "vezetékes",
+                    "szam": "0646555-123"
+                },
+                {
+                    "tipus": "mobil",
+                    "szam": "0670555-4567"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "kurzusnev": "Biztonságvédelem",
+            "tipus": "eloadas",
+            "eloado": "Wagner György",
+            "helyszin": "XXXIII-as előadó",
+            "idopont": {
+                "nap": "Szerda",
+                "tol": "12:00",
+                "ig": "14:00"
+            },
+            "cim": {
+                "utca": "Egyetemvaros",
+                "varos": "Miskolc",
+                "iranyitoszam": "1021"
+            },
+            "telefonszamok": [
+                {
+                    "tipus": "vezetékes",
+                    "szam": "0646555-123"
+                },
+                {
+                    "tipus": "mobil",
+                    "szam": "0670555-4567"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "kurzusnev": "Optimalizálás",
+            "tipus": "eloadas",
+            "eloado": "Dr. Körei Attila",
+            "helyszin": "XXXIII-as előadó",
+            "idopont": {
+                "nap": "Szerda",
+                "tol": "14:00",
+                "ig": "16:00"
+            },
+            "cim": {
+                "utca": "Egyetemvaros",
+                "varos": "Miskolc",
+                "iranyitoszam": "1021"
+            },
+            "telefonszamok": [
+                {
+                    "tipus": "vezetékes",
+                    "szam": "0646555-123"
+                },
+                {
+                    "tipus": "mobil",
+                    "szam": "0670555-4567"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "kurzusnev": "Optimalizálás",
+            "tipus": "gyakorlat",
+            "eloado": "Dr. Körei Attila",
+            "helyszin": "XXXIII-as előadó",
+            "idopont": {
+                "nap": "Szerda",
+                "tol": "16:00",
+                "ig": "18:00"
+            },
+            "cim": {
+                "utca": "Egyetemvaros",
+                "varos": "Miskolc",
+                "iranyitoszam": "1021"
+            },
+            "telefonszamok": [
+                {
+                    "tipus": "vezetékes",
+                    "szam": "0646555-123"
+                },
+                {
+                    "tipus": "mobil",
+                    "szam": "0670555-4567"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "kurzusnev": "Biztonságvédelem",
+            "tipus": "gyakorlat",
+            "eloado": "Wagner György",
+            "helyszin": "Inf/101",
+            "idopont": {
+                "nap": "Csütörtök",
+                "tol": "8:00",
+                "ig": "10:00"
+            },
+            "cim": {
+                "utca": "Egyetemvaros",
+                "varos": "Miskolc",
+                "iranyitoszam": "1021"
+            },
+            "telefonszamok": [
+                {
+                    "tipus": "vezetékes",
+                    "szam": "0646555-123"
+                },
+                {
+                    "tipus": "mobil",
+                    "szam": "0670555-4567"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "kurzusnev": "Java programozás",
+            "tipus": "gyakorlat",
+            "eloado": "Csépányi-Fürjes Lászó",
+            "helyszin": "Inf/101",
+            "idopont": {
+                "nap": "Csütörtök",
+                "tol": "10:00",
+                "ig": "12:00"
+            },
+            "cim": {
+                "utca": "Egyetemvaros",
+                "varos": "Miskolc",
+                "iranyitoszam": "1021"
+            },
+            "telefonszamok": [
+                {
+                    "tipus": "vezetékes",
+                    "szam": "0646555-123"
+                },
+                {
+                    "tipus": "mobil",
+                    "szam": "0670555-4567"
+                }
+            ]
+        }
+    ]
 }

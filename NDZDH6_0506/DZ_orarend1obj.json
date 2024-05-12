@@ -1,0 +1,26 @@
+{
+    "kurzusnev": "Webtech alapjai",
+    "tipus": "eloadas",
+    "eloado": "Dr. Agárdi Anita",
+    "helyszin": "A1 218",
+    "idopont": {
+        "nap": "Hétfő",
+        "tol": "8:00",
+        "ig": "10:00"
+    },
+    "cim": {
+        "utca": "Egyetemvaros",
+        "varos": "Miskolc",
+        "iranyitoszam": "1021"
+    },
+    "telefonszamok": [
+        {
+            "tipus": "vezetékes",
+            "szam": "0646555-123"
+        },
+        {
+            "tipus": "mobil",
+            "szam": "0670555-4567"
+        }
+    ]
+}
