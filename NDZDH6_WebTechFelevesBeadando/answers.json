@@ -54,5 +54,19 @@
     "message": "Nincs itt semmi nevetnivaló..\r\n                        ",
     "favcolor": "#4e6a57",
     "brand": "fujifilm"
+  },
+  {
+    "camera": [
+      "canon",
+      "sony",
+      "fujifilm",
+      "yashica"
+    ],
+    "name": "Próba Lajos",
+    "birthday": "2014-05-01",
+    "gender": "female",
+    "message": "Nincs semmi viccem..\r\n                        ",
+    "favcolor": "#c7c7c7",
+    "brand": "canon"
   }
 ]
