@@ -29,7 +29,7 @@
     <body>
         <br>
         <header>
-            <h1 id="title"><b>A fénykép(ező) titkai</b></h1>
+            <h1 id="title"><b>A fényképező titkai</b></h1>
             <br>
             <h2>Nyereményjáték</h2>
         </header>
@@ -44,14 +44,14 @@
                         FÉNYKÉPEZÉS<br>TÖRTÉNETE</a>
                     <br>
                     <br>
-                    <a class="nav" href="rules.html"
+                    <!--<a class="nav" href="rules.html"
                         style="color: rgba(203, 86, 86, 0.789);">FÉNYKÉPEZÉS<br>ALAPSZABÁLYAI</a>
                     <br>
                     <br>
                     <a class="nav" href="types.html"
                         style="color: rgba(154, 96, 204, 0.823);">FÉNYKÉPEZŐGÉPEK<br>FAJTÁI</a>
                     <br>
-                    <br>
+                    <br>-->
                     <a class="nav" href="configs.html" style="color: rgb(158, 158, 158);">NÉPSZERŰ TÍPUSOK</a>
                     <br>
                     <br>
@@ -87,7 +87,7 @@
                 
                 <h3>Milyen márkájú eszközök bukkannak fel?</h3>
                 <br>
-                <form id="form" name="form" action="" method="post" target="_self" action="feldolgozo.php">
+                <form id="form" name="form" action="" method="post" target="_self">
                     <p class="article" style="position: relative; left: 239px;">
                         <input type="checkbox" id="camera1" name="camera" value="canon">
                         <label for="camera1"> Canon</label><br>
@@ -127,7 +127,7 @@
                             <label for="male">Férfi</label><br>
                         </p>
                         <p class="article">Az esélyeidet növelő kedvenc favicced: <br><br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;<textarea name="message" rows="10" cols="30">Hogy hívják a kopasz teherautót?
+                            &nbsp;&nbsp;&nbsp;&nbsp;<textarea name="message" rows="7" cols="30">Hogy hívják a kopasz teherautót?
                         
 
 
@@ -138,9 +138,21 @@ TarIfa.
                         <p class="article">
                             <label for="favcolor">A megnyerhető nyakpánt választott színe:&nbsp;&nbsp;</label>
                             <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
-
+                        </p>
+                        <p>A nyakpántra nyomtatott márka neve:
+                            <input type="text" id="brand" name="brand" list="brands"
+                                placeholder="Válassz ki vagy írj be" required autocomplete="off">
+                        </p>
+                        <datalist id="brands">
+                            <option value="canon">Canon</option>
+                            <option value="nikon">Nikon</option>
+                            <option value="fujifilm">Fujifilm</option>
+                            <option value="sony">Sony</option>
+                            <option value="leica">Leica</option>
+                        </datalist>
                     </div>
                 </form>
+                <br><br>
                 <div>
                     <input id="submit" type="submit" value="ELKÜLD" form="form"
                         onsubmit="return validateForm()"

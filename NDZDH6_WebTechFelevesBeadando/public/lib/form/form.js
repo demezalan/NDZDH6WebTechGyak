@@ -6,5 +6,7 @@ $(document).ready(function () {
             alert("4 márkát kell bejelölni!");
             return false;
         }
+
+        alert("Sikeresen jelentkeztél a nyereményjátékra!");
     });
 });

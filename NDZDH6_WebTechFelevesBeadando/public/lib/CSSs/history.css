@@ -182,6 +182,13 @@
                 text-align: justify;
             }
 
+            p.source {
+                color: darkgray;
+                font-size: 12px;
+                text-align: right;
+                display: inline;
+            }
+
             p.footer {
                 font-family: 'DDT Cond SemiBold', monospace;
                 color: rgb(169, 169, 169);

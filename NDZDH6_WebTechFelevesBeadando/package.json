@@ -1,7 +1,7 @@
 {
-    "name": "my-project",
+    "name": "fenykepezo_titkai",
     "version": "1.0.0",
-    "description": "My Node.js project",
+    "description": "fenykepezokrol infok",
     "main": "server.js",
     "scripts": {
       "start": "node server.js"

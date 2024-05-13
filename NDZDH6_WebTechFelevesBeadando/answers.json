@@ -1,0 +1,58 @@
+[
+  {
+    "camera": [
+      "canon",
+      "olympus",
+      "fujifilm",
+      "yashica"
+    ],
+    "name": "Alajos",
+    "birthday": "1969-07-12",
+    "gender": "male",
+    "message": "Koppkopp..\r\n                        ",
+    "favcolor": "#48e577",
+    "brand": "bfb"
+  },
+  {
+    "camera": [
+      "canon",
+      "olympus",
+      "fujifilm",
+      "yashica"
+    ],
+    "name": "Nevecske",
+    "birthday": "2014-05-01",
+    "gender": "female",
+    "message": "\r\n                        ",
+    "favcolor": "#eabdbd",
+    "brand": "nikon"
+  },
+  {
+    "camera": [
+      "nikon",
+      "olympus",
+      "sony",
+      "fujifilm"
+    ],
+    "name": "gfhfhgf",
+    "birthday": "2014-04-30",
+    "gender": "male",
+    "message": "Hogy hívják a kopasz teherautót?\r\n                        \r\n\r\n\r\n\r\nTarIfa.\r\n                        ",
+    "favcolor": "#ff0000",
+    "brand": "fujifilm"
+  },
+  {
+    "camera": [
+      "canon",
+      "nikon",
+      "sony",
+      "fujifilm"
+    ],
+    "name": "Márió",
+    "birthday": "2002-06-23",
+    "gender": "male",
+    "message": "Nincs itt semmi nevetnivaló..\r\n                        ",
+    "favcolor": "#4e6a57",
+    "brand": "fujifilm"
+  }
+]

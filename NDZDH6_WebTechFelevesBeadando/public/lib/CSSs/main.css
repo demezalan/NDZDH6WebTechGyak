@@ -20,7 +20,7 @@
             nav {
                 float: left;
                 width: 7%;
-                height: 1380px;
+                height: 1240px;
                 background: rgb(0, 0, 0);
                 padding: 20px;
                 text-align: left;
@@ -29,7 +29,7 @@
             aside {
                 float: right;
                 width: 10%;
-                height: 1380px;
+                height: 1240px;
                 background: rgb(27, 27, 27);
                 padding: 20px;
                 text-align: center;
@@ -58,7 +58,7 @@
                 padding: 40px;
                 width: 20.02%;
                 background-color: #1a2e2d;
-                height: 760px;
+                height: 620px;
                 text-align: left;
                 float: left;
             }
@@ -67,7 +67,7 @@
                 padding: 40px;
                 width: 47%;
                 background-color: #2b2b2b;
-                height: 760px;
+                height: 620px;
                 text-align: center;
                 float: right;
             }
